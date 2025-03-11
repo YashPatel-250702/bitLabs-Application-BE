@@ -1,0 +1,232 @@
+10-03-2025_11:16:08.023{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+10-03-2025_11:16:08.033{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Starting TalentStreamApplication using Java 21.0.5 on SYMPLT1017 with PID 880 (C:\Users\Yashpatel\Pictures\Talentstreambackend1\target\classes started by Yashpatel in C:\Users\Yashpatel\Pictures\Talentstreambackend1)
+10-03-2025_11:16:08.034{UTC}|report-tool|DEBUG||c.t.TalentStreamApplication|Running with Spring Boot v2.7.9, Spring v5.3.25
+10-03-2025_11:16:08.034{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|No active profile set, falling back to 1 default profile: "default"
+10-03-2025_11:16:09.306{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10-03-2025_11:16:09.487{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 168 ms. Found 35 JPA repository interfaces.
+10-03-2025_11:16:10.458{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat initialized with port(s): 8081 (http)
+10-03-2025_11:16:10.470{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Initializing ProtocolHandler ["http-nio-8081"]
+10-03-2025_11:16:10.471{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+10-03-2025_11:16:10.472{UTC}|report-tool|INFO ||o.a.c.c.StandardEngine|Starting Servlet engine: [Apache Tomcat/9.0.71]
+10-03-2025_11:16:10.626{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+10-03-2025_11:16:10.627{UTC}|report-tool|INFO ||o.s.b.w.s.c.ServletWebServerApplicationContext|Root WebApplicationContext: initialization completed in 2530 ms
+10-03-2025_11:16:13.418{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+10-03-2025_11:16:13.931{UTC}|report-tool|INFO ||c.z.h.p.HikariPool|HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@36885319
+10-03-2025_11:16:13.933{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+10-03-2025_11:16:14.067{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+10-03-2025_11:16:14.157{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+10-03-2025_11:16:14.362{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10-03-2025_11:16:14.578{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+10-03-2025_11:16:22.674{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10-03-2025_11:16:22.694{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-03-2025_11:16:23.238{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Filter 'jwtRequestFilter' configured for use
+10-03-2025_11:16:23.295{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10-03-2025_11:16:23.852{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+10-03-2025_11:16:23.883{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+10-03-2025_11:16:24.121{UTC}|report-tool|INFO ||o.j.l.o.OfficeDescriptor|soffice info (from exec path): Product: LibreOffice - Version: ??? - useLongOptionNameGnuStyle: true
+10-03-2025_11:16:24.355{UTC}|report-tool|INFO ||o.j.l.o.LocalOfficeProcessManager|Starting process with --accept 'socket,host=127.0.0.1,port=8100,tcpNoDelay=1;urp;StarOffice.ServiceManager' and profileDir 'C:\Users\YASHPA~1\AppData\Local\Temp\.jodconverter_socket_host-127.0.0.1_port-8100_tcpNoDelay-1'
+10-03-2025_11:16:26.406{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6f334ec2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@78a6ffe3, org.springframework.security.web.context.SecurityContextPersistenceFilter@7dafb9f9, org.springframework.security.web.header.HeaderWriterFilter@79f8af90, org.springframework.security.web.authentication.logout.LogoutFilter@2af97fb9, com.talentstream.filter.JwtRequestFilter@5f2312f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64cc5f34, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1aa75e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f04b315, org.springframework.security.web.session.SessionManagementFilter@23b085ab, org.springframework.security.web.access.ExceptionTranslationFilter@72294513, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24d6355c]
+10-03-2025_11:16:26.710{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Starting ProtocolHandler ["http-nio-8081"]
+10-03-2025_11:16:26.731{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat started on port(s): 8081 (http) with context path ''
+10-03-2025_11:16:27.625{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Started TalentStreamApplication in 20.09 seconds (JVM running for 21.088)
+10-03-2025_11:16:27.712{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+10-03-2025_11:16:27.712{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Initializing Servlet 'dispatcherServlet'
+10-03-2025_11:16:27.714{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Completed initialization in 2 ms
+10-03-2025_11:16:27.735{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:16:27.736{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:16:27.736{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:16:27.762{UTC}|report-tool|ERROR||o.j.l.o.VerboseProcess|Entity: line 1: parser error : Document is empty
+10-03-2025_11:16:27.762{UTC}|report-tool|ERROR||o.j.l.o.VerboseProcess|
+10-03-2025_11:16:27.762{UTC}|report-tool|ERROR||o.j.l.o.VerboseProcess|^
+10-03-2025_11:16:43.084{UTC}|report-tool|INFO ||o.j.l.o.OfficeConnection|Connected: 'socket,host=127.0.0.1,port=8100,tcpNoDelay=1'
+10-03-2025_11:16:43.085{UTC}|report-tool|INFO ||o.j.l.o.LocalOfficeProcessManager|Started process; pid: 2112
+10-03-2025_11:17:52.721{UTC}|report-tool|ERROR||o.a.c.c.C.[.[.[.[dispatcherServlet]|Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-03-09T00:56:19Z. Current time: 2025-03-10T11:17:52Z, a difference of 123693718 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.talentstream.service.JwtUtil.extractAllClaims(JwtUtil.java:33)
+	at com.talentstream.service.JwtUtil.extractClaim(JwtUtil.java:29)
+	at com.talentstream.service.JwtUtil.extractUsername(JwtUtil.java:21)
+	at com.talentstream.service.JwtUtil$$FastClassBySpringCGLIB$$f363fddb.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.talentstream.service.JwtUtil$$EnhancerBySpringCGLIB$$ff53de7e.extractUsername(<generated>)
+	at com.talentstream.filter.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:89)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+10-03-2025_11:17:57.176{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:17:57.177{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:17:57.177{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:17:57.253{UTC}|report-tool|INFO ||c.t.c.ApplicantProfileController|Attempting to login with email: patelyas50702@gmail.com
+10-03-2025_11:17:57.305{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Handling Google Sign-In for email: patelyas50702@gmail.com
+10-03-2025_11:17:57.461{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Google Sign-In successful for: patelyas50702@gmail.com
+10-03-2025_11:18:34.514{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRlbHlhczUwNzAyQGdtYWlsLmNvbSIsImV4cCI6MTc0MTYyMTY3NywiaWF0IjoxNzQxNTg1Njc3fQ.aBCHtcWIWYvgRRa4eOljsii--Bf8mGuWYCdLSoYUg-s
+10-03-2025_11:18:34.515{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRlbHlhczUwNzAyQGdtYWlsLmNvbSIsImV4cCI6MTc0MTYyMTY3NywiaWF0IjoxNzQxNTg1Njc3fQ.aBCHtcWIWYvgRRa4eOljsii--Bf8mGuWYCdLSoYUg-s
+10-03-2025_11:18:34.515{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: patelyas50702@gmail.com
+10-03-2025_11:18:44.616{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRlbHlhczUwNzAyQGdtYWlsLmNvbSIsImV4cCI6MTc0MTYyMTY3NywiaWF0IjoxNzQxNTg1Njc3fQ.aBCHtcWIWYvgRRa4eOljsii--Bf8mGuWYCdLSoYUg-s
+10-03-2025_11:18:44.617{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRlbHlhczUwNzAyQGdtYWlsLmNvbSIsImV4cCI6MTc0MTYyMTY3NywiaWF0IjoxNzQxNTg1Njc3fQ.aBCHtcWIWYvgRRa4eOljsii--Bf8mGuWYCdLSoYUg-s
+10-03-2025_11:18:44.617{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: patelyas50702@gmail.com
+10-03-2025_11:18:50.506{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRlbHlhczUwNzAyQGdtYWlsLmNvbSIsImV4cCI6MTc0MTYyMTY3NywiaWF0IjoxNzQxNTg1Njc3fQ.aBCHtcWIWYvgRRa4eOljsii--Bf8mGuWYCdLSoYUg-s
+10-03-2025_11:18:50.506{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRlbHlhczUwNzAyQGdtYWlsLmNvbSIsImV4cCI6MTc0MTYyMTY3NywiaWF0IjoxNzQxNTg1Njc3fQ.aBCHtcWIWYvgRRa4eOljsii--Bf8mGuWYCdLSoYUg-s
+10-03-2025_11:18:50.506{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: patelyas50702@gmail.com
+10-03-2025_11:18:55.911{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRlbHlhczUwNzAyQGdtYWlsLmNvbSIsImV4cCI6MTc0MTYyMTY3NywiaWF0IjoxNzQxNTg1Njc3fQ.aBCHtcWIWYvgRRa4eOljsii--Bf8mGuWYCdLSoYUg-s
+10-03-2025_11:18:55.911{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRlbHlhczUwNzAyQGdtYWlsLmNvbSIsImV4cCI6MTc0MTYyMTY3NywiaWF0IjoxNzQxNTg1Njc3fQ.aBCHtcWIWYvgRRa4eOljsii--Bf8mGuWYCdLSoYUg-s
+10-03-2025_11:18:55.912{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: patelyas50702@gmail.com
+10-03-2025_11:19:03.766{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRlbHlhczUwNzAyQGdtYWlsLmNvbSIsImV4cCI6MTc0MTYyMTY3NywiaWF0IjoxNzQxNTg1Njc3fQ.aBCHtcWIWYvgRRa4eOljsii--Bf8mGuWYCdLSoYUg-s
+10-03-2025_11:19:03.767{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRlbHlhczUwNzAyQGdtYWlsLmNvbSIsImV4cCI6MTc0MTYyMTY3NywiaWF0IjoxNzQxNTg1Njc3fQ.aBCHtcWIWYvgRRa4eOljsii--Bf8mGuWYCdLSoYUg-s
+10-03-2025_11:19:03.767{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: patelyas50702@gmail.com
+10-03-2025_11:25:22.243{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:22.244{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:22.244{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:22.366{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:22.367{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:22.367{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:22.367{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:22.367{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:22.367{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:22.367{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:22.367{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:22.367{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:22.398{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:22.398{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:22.398{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:22.398{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:22.398{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:22.398{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:22.522{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:22.523{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:22.523{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:22.535{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:22.535{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:22.535{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:22.541{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:22.541{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:22.541{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:22.576{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:22.577{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:22.577{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:29.135{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:29.136{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:29.136{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:29.476{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:29.476{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:29.476{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:29.485{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:29.486{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:29.486{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:29.486{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:29.487{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:29.487{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:29.486{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:29.487{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:29.487{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:29.487{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:29.487{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:29.487{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:29.647{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:29.648{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:29.648{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:29.657{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:29.657{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:29.657{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:29.662{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:29.663{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:29.663{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:29.669{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:29.669{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:29.669{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_11:25:29.715{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+10-03-2025_11:25:29.715{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+10-03-2025_11:25:29.715{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+10-03-2025_13:20:46.260{UTC}|report-tool|INFO ||o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin|Application shutdown requested.
+10-03-2025_13:20:46.268{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Pausing ProtocolHandler ["http-nio-8081"]
+10-03-2025_13:20:46.268{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+10-03-2025_13:20:46.270{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Destroying Spring FrameworkServlet 'dispatcherServlet'
+10-03-2025_13:20:46.273{UTC}|report-tool|WARN ||o.a.c.l.WebappClassLoaderBase|The web application [ROOT] appears to have started a thread named [idle-connection-reaper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.Thread.sleep0(Native Method)
+ java.base/java.lang.Thread.sleep(Thread.java:509)
+ software.amazon.awssdk.http.apache.internal.conn.IdleConnectionReaper$ReaperTask.run(IdleConnectionReaper.java:151)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+10-03-2025_13:20:46.273{UTC}|report-tool|WARN ||o.a.c.l.WebappClassLoaderBase|The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+10-03-2025_13:20:46.274{UTC}|report-tool|WARN ||o.a.c.l.WebappClassLoaderBase|The web application [ROOT] appears to have started a thread named [java-sdk-http-connection-reaper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.Thread.sleep0(Native Method)
+ java.base/java.lang.Thread.sleep(Thread.java:509)
+ com.amazonaws.http.IdleConnectionReaper.run(IdleConnectionReaper.java:188)
+10-03-2025_13:20:46.274{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Stopping ProtocolHandler ["http-nio-8081"]
+10-03-2025_13:20:46.279{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Destroying ProtocolHandler ["http-nio-8081"]
+10-03-2025_13:20:46.295{UTC}|report-tool|INFO ||o.j.c.o.AbstractOfficeManagerPool|Stopping the office manager pool...
+10-03-2025_13:20:46.457{UTC}|report-tool|INFO ||o.j.l.o.OfficeConnection|Disconnected from 'socket,host=127.0.0.1,port=8100,tcpNoDelay=1'
+10-03-2025_13:20:46.809{UTC}|report-tool|INFO ||o.j.l.o.LocalOfficeProcessManager|Process exited with code 0
+10-03-2025_13:20:46.936{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+10-03-2025_13:20:46.937{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+10-03-2025_13:20:46.940{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.
