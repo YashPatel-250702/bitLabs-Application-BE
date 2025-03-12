@@ -4381,3 +4381,30 @@ java.lang.RuntimeException: Resume not found for Applicant id: 58
 12-03-2025_14:15:19.794{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
 12-03-2025_14:15:19.796{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
 12-03-2025_14:15:19.797{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_15:14:19.858{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_15:14:19.859{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_15:14:19.859{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_15:22:25.704{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDg2NzYsImlhdCI6MTc0MTc3MjY3Nn0.ZPvpFn1sT0T_VaGAXFtSMSGIQWEwYq05fGGBnwkEmXw
+12-03-2025_15:22:25.705{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDg2NzYsImlhdCI6MTc0MTc3MjY3Nn0.ZPvpFn1sT0T_VaGAXFtSMSGIQWEwYq05fGGBnwkEmXw
+12-03-2025_15:22:25.705{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_15:22:27.814{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDg2NzYsImlhdCI6MTc0MTc3MjY3Nn0.ZPvpFn1sT0T_VaGAXFtSMSGIQWEwYq05fGGBnwkEmXw
+12-03-2025_15:22:27.814{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDg2NzYsImlhdCI6MTc0MTc3MjY3Nn0.ZPvpFn1sT0T_VaGAXFtSMSGIQWEwYq05fGGBnwkEmXw
+12-03-2025_15:22:27.814{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_15:22:52.064{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+12-03-2025_15:22:52.064{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+12-03-2025_15:22:52.064{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+12-03-2025_15:22:55.355{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+12-03-2025_15:22:55.355{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+12-03-2025_15:22:55.355{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+12-03-2025_15:22:55.361{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+12-03-2025_15:22:55.361{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+12-03-2025_15:22:55.361{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+12-03-2025_15:22:55.492{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+12-03-2025_15:22:55.492{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+12-03-2025_15:22:55.492{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+12-03-2025_15:22:55.564{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+12-03-2025_15:22:55.564{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+12-03-2025_15:22:55.564{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+12-03-2025_15:22:55.633{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+12-03-2025_15:22:55.633{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+12-03-2025_15:22:55.633{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
