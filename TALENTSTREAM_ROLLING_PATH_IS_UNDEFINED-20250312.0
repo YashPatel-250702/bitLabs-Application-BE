@@ -4050,3 +4050,334 @@ java.lang.RuntimeException: Resume not found for Applicant id: 60
 12-03-2025_14:10:28.113{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
 12-03-2025_14:10:28.113{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
 12-03-2025_14:10:28.113{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:10:37.627{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+12-03-2025_14:10:37.628{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+12-03-2025_14:10:37.628{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+12-03-2025_14:10:37.810{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:37.810{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:37.810{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:37.810{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:37.810{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:37.810{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:37.810{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:10:37.810{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:10:37.810{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:10:37.811{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile view for applicantId: 55
+12-03-2025_14:10:37.811{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to get unread alert count for applicant 55
+12-03-2025_14:10:37.824{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:37.824{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:37.824{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:10:37.825{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile ID for applicantId: 55
+12-03-2025_14:10:37.829{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+12-03-2025_14:10:37.829{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+12-03-2025_14:10:37.829{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+12-03-2025_14:10:37.896{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Retrieved unread alert count successfully for applicant 55: 0
+12-03-2025_14:10:38.082{UTC}|report-tool|INFO ||c.t.c.ApplicantProfileController|Profile view fetched successfully for applicantId: 55
+12-03-2025_14:10:38.222{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:38.222{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:38.222{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:10:38.463{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:38.463{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:38.463{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:10:38.468{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile ID for applicantId: 55
+12-03-2025_14:10:38.533{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:38.533{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:38.533{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:38.533{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:38.533{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:10:38.533{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:10:38.534{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to get unread alert count for applicant 55
+12-03-2025_14:10:38.580{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:38.580{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:38.580{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:10:38.580{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile view for applicantId: 55
+12-03-2025_14:10:38.582{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Retrieved unread alert count successfully for applicant 55: 0
+12-03-2025_14:10:38.634{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:38.634{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:38.634{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:10:38.760{UTC}|report-tool|INFO ||c.t.c.ApplicantProfileController|Profile view fetched successfully for applicantId: 55
+12-03-2025_14:10:38.800{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:38.800{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:38.800{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:10:40.880{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:40.881{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:10:40.881{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:13:17.973{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:17.973{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:17.974{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:13:17.988{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:17.988{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:17.989{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:13:18.026{UTC}|report-tool|ERROR||c.t.c.ResumeBuilderController|Error while fetching resume
+java.lang.RuntimeException: Resume not found for Applicant id: 58
+	at com.talentstream.service.ResumeBuilderService.lambda$1(ResumeBuilderService.java:167)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.talentstream.service.ResumeBuilderService.getResume(ResumeBuilderService.java:167)
+	at com.talentstream.service.ResumeBuilderService$$FastClassBySpringCGLIB$$c7170cf5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.talentstream.aop.AspectAop.logAroundMethod(AspectAop.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.talentstream.service.ResumeBuilderService$$EnhancerBySpringCGLIB$$171a30ad.getResume(<generated>)
+	at com.talentstream.controller.ResumeBuilderController.getResumeWithEducation(ResumeBuilderController.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at com.talentstream.filter.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+12-03-2025_14:13:41.795{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:41.795{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:41.795{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:13:42.206{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:42.206{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:42.206{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:13:42.573{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:42.574{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:42.574{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:13:42.946{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:42.947{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:42.947{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:13:49.020{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:49.020{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:49.021{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:13:49.408{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:49.408{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:49.408{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:13:49.835{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:49.835{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:49.835{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:13:50.264{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:50.265{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:13:50.265{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:20.477{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:20.477{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:20.477{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:28.512{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:28.513{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:28.513{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:28.555{UTC}|report-tool|WARN ||c.a.s.s.AmazonS3Client|No content length specified for stream data.  Stream contents will be buffered in memory and could result in out of memory errors.
+12-03-2025_14:14:37.812{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+12-03-2025_14:14:37.813{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+12-03-2025_14:14:37.814{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+12-03-2025_14:14:37.910{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:37.910{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:37.911{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:37.912{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile ID for applicantId: 55
+12-03-2025_14:14:37.942{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:37.942{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:37.942{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:37.942{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:37.942{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:37.942{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:37.943{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile view for applicantId: 55
+12-03-2025_14:14:37.954{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+12-03-2025_14:14:37.954{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+12-03-2025_14:14:37.954{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+12-03-2025_14:14:37.973{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:37.973{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:37.974{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:37.975{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to get unread alert count for applicant 55
+12-03-2025_14:14:38.046{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Retrieved unread alert count successfully for applicant 55: 0
+12-03-2025_14:14:38.098{UTC}|report-tool|INFO ||c.t.c.ApplicantProfileController|Profile view fetched successfully for applicantId: 55
+12-03-2025_14:14:38.131{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:38.131{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:38.131{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:38.132{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile ID for applicantId: 55
+12-03-2025_14:14:38.144{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:38.144{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:38.144{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:38.145{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to get unread alert count for applicant 55
+12-03-2025_14:14:38.164{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:38.164{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:38.164{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:38.179{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Retrieved unread alert count successfully for applicant 55: 0
+12-03-2025_14:14:38.244{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:38.244{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:38.244{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:38.245{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile view for applicantId: 55
+12-03-2025_14:14:38.310{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:38.310{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:38.310{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:38.376{UTC}|report-tool|INFO ||c.t.c.ApplicantProfileController|Profile view fetched successfully for applicantId: 55
+12-03-2025_14:14:38.607{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:38.608{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:38.608{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:38.843{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:38.843{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:38.843{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:40.422{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:40.422{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:40.422{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:57.713{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:57.713{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:57.713{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:58.121{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:58.122{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:58.122{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:58.500{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:58.500{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:58.500{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:14:58.897{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:58.897{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:14:58.897{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:15:13.240{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:13.241{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:13.241{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:15:13.300{UTC}|report-tool|WARN ||c.a.s.s.AmazonS3Client|No content length specified for stream data.  Stream contents will be buffered in memory and could result in out of memory errors.
+12-03-2025_14:15:17.598{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+12-03-2025_14:15:17.599{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+12-03-2025_14:15:17.599{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+12-03-2025_14:15:17.696{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.696{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.696{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:15:17.703{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.703{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.703{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:15:17.705{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to get unread alert count for applicant 55
+12-03-2025_14:15:17.705{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.705{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.706{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.706{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.706{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:15:17.706{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:15:17.707{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile view for applicantId: 55
+12-03-2025_14:15:17.707{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile ID for applicantId: 55
+12-03-2025_14:15:17.708{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+12-03-2025_14:15:17.708{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+12-03-2025_14:15:17.708{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+12-03-2025_14:15:17.735{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Retrieved unread alert count successfully for applicant 55: 0
+12-03-2025_14:15:17.807{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.807{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.807{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:15:17.810{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to get unread alert count for applicant 55
+12-03-2025_14:15:17.836{UTC}|report-tool|INFO ||c.t.c.ApplicantProfileController|Profile view fetched successfully for applicantId: 55
+12-03-2025_14:15:17.842{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Retrieved unread alert count successfully for applicant 55: 0
+12-03-2025_14:15:17.849{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.849{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.849{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:15:17.851{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile ID for applicantId: 55
+12-03-2025_14:15:17.853{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.853{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.853{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:15:17.971{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.971{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.971{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:15:17.972{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile view for applicantId: 55
+12-03-2025_14:15:17.993{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.993{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.993{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:15:17.993{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.994{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:17.994{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:15:18.101{UTC}|report-tool|INFO ||c.t.c.ApplicantProfileController|Profile view fetched successfully for applicantId: 55
+12-03-2025_14:15:18.583{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:18.583{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:18.583{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com
+12-03-2025_14:15:19.794{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:19.796{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2ZW5rYXRlc2hrdW1hcm1hbmRsYUBnbWFpbC5jb20iLCJleHAiOjE3NDE4MDQ2OTAsImlhdCI6MTc0MTc2ODY5MH0.SwuyEmdcKrQ0sPqXn-Vj3OAla_K3yDfilF_6FcFEe_Q
+12-03-2025_14:15:19.797{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: venkateshkumarmandla@gmail.com

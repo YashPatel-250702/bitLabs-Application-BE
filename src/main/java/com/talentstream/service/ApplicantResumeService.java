@@ -1,83 +1,48 @@
 package com.talentstream.service;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
-
-import org.jodconverter.core.document.DefaultDocumentFormatRegistry;
-import org.jodconverter.core.office.OfficeException;
-import org.jodconverter.local.LocalConverter;
-import org.jodconverter.local.office.LocalOfficeManager;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.ByteArrayResource;
-import org.springframework.core.io.Resource;
-import org.springframework.core.io.UrlResource;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
-
+import org.springframework.http.ResponseEntity;
 import com.talentstream.entity.Applicant;
 import com.talentstream.entity.ApplicantResume;
 import com.talentstream.exception.CustomException;
 import com.talentstream.repository.ApplicantResumeRepository;
 import com.talentstream.repository.RegisterRepository;
-
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+import java.net.MalformedURLException;
+import org.springframework.core.io.UrlResource;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+@Transactional
 @Service
 public class ApplicantResumeService {
 
-	  private static final Logger logger = LoggerFactory.getLogger(ApplicantResumeService.class);
-    
-	@Autowired
+    @Autowired
     private ApplicantResumeRepository applicantResumeRepository;
 
-    
-    private final LocalOfficeManager officeManager;
-    
-   
-    public ApplicantResumeService(LocalOfficeManager officeManager) {
-        this.officeManager = officeManager;
-       
-    }
-    
-    
     @Autowired
     private RegisterRepository applicantService;
 
     // Uploads a PDF resume for the specified applicant; validates file size and
     // type; throws CustomException for errors.
     public String UploadPdf(long applicantId, MultipartFile pdfFile) throws IOException {
-        
-    	//#increase the file input size
-        if (pdfFile.getSize() > 2 * 1024 * 1024) {
+
+        if (pdfFile.getSize() > 1 * 1024 * 1024) {
             throw new CustomException("File size should be less than 1MB.", HttpStatus.BAD_REQUEST);
         }
 
-       
-         String contentType = pdfFile.getContentType();
-        
-//        if (!"application/pdf".equals(contentType)) {
-//            throw new CustomException("Only PDF file types are allowed.", HttpStatus.BAD_REQUEST);
-//        }
-        
-        //#changed the code now it will accept pdf along with doc and docx.
-        if (!"application/pdf".equals(contentType) &&
-        	    !"application/msword".equals(contentType) &&
-        	    !"application/vnd.openxmlformats-officedocument.wordprocessingml.document".equals(contentType)) {
-        	    
-        	    throw new CustomException("Only PDF, DOC, and DOCX file types are allowed.", HttpStatus.BAD_REQUEST);
-        	}
-        
+        String contentType = pdfFile.getContentType();
+        if (!"application/pdf".equals(contentType)) {
+            throw new CustomException("Only PDF file types are allowed.", HttpStatus.BAD_REQUEST);
+        }
 
         Applicant applicant = applicantService.getApplicantById(applicantId);
         if (applicant == null)
@@ -132,80 +97,21 @@ public class ApplicantResumeService {
 
     // Retrieves the resume for the specified applicant by ID; returns a Resource
     // for the PDF file; throws CustomException if not found.
+    public ResponseEntity<org.springframework.core.io.Resource> getResumeByApplicantId(long applicantId)
+            throws IOException {
 
-
- 
-//    public ResponseEntity<org.springframework.core.io.Resource> getResumeByApplicantId(long applicantId)
-//            throws IOException {
-//
-//        ApplicantResume applicantResume = applicantResumeRepository.findByApplicantId(applicantId);
-//        if (applicantResume != null) {
-//            String fileName = applicantResume.getPdfname();
-//            Path filePath = Paths.get("src/main/resources/applicant/resumes", fileName);
-//            try {
-//                UrlResource resource = new UrlResource(filePath.toUri());
-//
-//                return ResponseEntity.ok()
-//                        .contentType(MediaType.APPLICATION_PDF)
-//                        .header(HttpHeaders.CONTENT_DISPOSITION,
-//                                "attachment; filename=\"" + resource.getFilename() + "\"")
-//                        .body(resource);
-//            } catch (MalformedURLException e) {
-//                throw new RuntimeException("Error reading the resume file for applicant ID: " + applicantId, e);
-//            }
-//        } else {
-//            throw new CustomException("Resume not found for applicant ID: " + applicantId, HttpStatus.NOT_FOUND);
-//        }
-//    }
-
-
-    
-  
-    public ResponseEntity<Resource> getResumeByApplicantId(long applicantId) throws IOException, OfficeException {
         ApplicantResume applicantResume = applicantResumeRepository.findByApplicantId(applicantId);
-
         if (applicantResume != null) {
             String fileName = applicantResume.getPdfname();
             Path filePath = Paths.get("src/main/resources/applicant/resumes", fileName);
-
             try {
-            	
-            	
-                // Retrieve the file as a resource
                 UrlResource resource = new UrlResource(filePath.toUri());
 
-                if (!resource.exists() || !resource.isReadable()) {
-                    throw new CustomException("Resume file not accessible for applicant ID: " + applicantId, HttpStatus.NOT_FOUND);
-                }
-
-               
-                String fileExtension = StringUtils.getFilenameExtension(fileName);
-                logger.info("File extension is: {}", fileExtension);
-
-                // If the file is a DOC or DOCX, convert it to PDF
-                if ("doc".equalsIgnoreCase(fileExtension) || "docx".equalsIgnoreCase(fileExtension)) {
-                    try (InputStream docInputStream = Files.newInputStream(filePath)) {
-                    	
-                        ByteArrayResource pdfResource = convertToPdf(docInputStream);
-
-                        String pdfFileName = fileName.replaceFirst("\\.(doc|docx)$", ".pdf");
-
-                        return ResponseEntity.ok()
-                                .contentType(MediaType.APPLICATION_PDF)
-                                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + pdfFileName + "\"")
-                                .body(pdfResource);
-                    } catch (OfficeException | IOException e) {
-                        logger.error("Error converting DOC/DOCX to PDF for applicant ID: {}", applicantId, e);
-                        throw new CustomException("Failed to convert document to PDF", HttpStatus.INTERNAL_SERVER_ERROR);
-                    }
-                }
-
-                // If the file is already a PDF, return it directly
                 return ResponseEntity.ok()
                         .contentType(MediaType.APPLICATION_PDF)
-                        .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + fileName + "\"")
+                        .header(HttpHeaders.CONTENT_DISPOSITION,
+                                "attachment; filename=\"" + resource.getFilename() + "\"")
                         .body(resource);
-
             } catch (MalformedURLException e) {
                 throw new RuntimeException("Error reading the resume file for applicant ID: " + applicantId, e);
             }
@@ -214,28 +120,4 @@ public class ApplicantResumeService {
         }
     }
 
-
-    
-    
-    //method converting doc and docx into pdf before retreving
-    public   ByteArrayResource convertToPdf(InputStream docInputStream) throws IOException, OfficeException {
-    	ByteArrayOutputStream pdfOutputStream = new ByteArrayOutputStream();
-        try {
-            LocalConverter.make(officeManager)
-                    .convert(docInputStream)
-                    .to(pdfOutputStream)
-                    .as(DefaultDocumentFormatRegistry.PDF)
-                    .execute();
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new IOException("Error converting document to PDF");
-        }
-        return new ByteArrayResource(pdfOutputStream.toByteArray());
-    }
-    
-    
 }
-    
-    
-    
-
