@@ -52,6 +52,9 @@ public Applicant login(String email, String password) {
 	System.out.println("Login is Mached "+email);
 	try {
 	Applicant applicant = applicantRepository.findByEmail(email);
+	
+	System.out.println("Provided password: "+password);
+	System.out.println("Applicant actual password: "+applicant.getPassword());
 	 if (applicant != null && passwordEncoder.matches(password, applicant.getPassword())) {
 		 applicant.setUtmSource("Not first time");
 	        return applicant;

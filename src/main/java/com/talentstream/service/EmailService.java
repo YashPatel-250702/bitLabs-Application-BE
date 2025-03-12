@@ -31,60 +31,37 @@ public class EmailService {
     } 
 
     // Configure the JavaMailSender manually
-//    private JavaMailSenderImpl getJavaMailSender() {
-//    	String secret = getSecret();
-//        System.out.println(secret);
-//        JSONObject jsonObject = new JSONObject(secret);
-//        String userName = jsonObject.getString("AWS_EMAIL_USERNAME");
-//        String passWord = jsonObject.getString("AWS_EMAIL_PASSWORD");
-//        
-//        System.out.println(userName);
-//        System.out.println(passWord);
-//        
-////        String userName ="AKIAWDMD3L7MQ6XDXLIN";
-////        String passWord ="BLLaxHrv++8qqIsx73mO1KZq225tXqIHYMQBM2EYgToK";
-//        
-//        JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-//        mailSender.setHost("email-smtp.ap-south-1.amazonaws.com");
-//        mailSender.setPort(587); // TLS port
-//
-//        // Set your SMTP credentials directly
-//        mailSender.setUsername(userName);
-//        mailSender.setPassword(passWord);
-//
-//        // Set additional mail properties
-//        Properties props = mailSender.getJavaMailProperties();
-//        props.put("mail.transport.protocol", "smtp");
-//        props.put("mail.smtp.auth", "true");
-//        props.put("mail.smtp.starttls.enable", "true");
-//        props.put("mail.debug", "true"); // Enables debug information in logs
-//
-//        return mailSender;
-//    }
-    private JavaMailSenderImpl getJavaMailSender() {
-     
-        String userName = "AKIA5MSUBXPU6EOEWGU6";  
-        String passWord = "BJnnzTGXykaVnVOINlE1d00NOG5OpBEgoTgIw/TibZ/N";  
-
-        System.out.println("SMTP Username: " + userName);
-        System.out.println("SMTP Password: " + passWord);
-
-        JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-        mailSender.setHost("email-smtp.us-east-1.amazonaws.com"); 
-        mailSender.setPort(587); 
-
-      
-        mailSender.setUsername(userName);
-        mailSender.setPassword(passWord);
-
+   private JavaMailSenderImpl getJavaMailSender() {
+   	String secret = getSecret();
+       System.out.println(secret);
+       JSONObject jsonObject = new JSONObject(secret);
+       String userName = jsonObject.getString("AWS_EMAIL_USERNAME");
+       String passWord = jsonObject.getString("AWS_EMAIL_PASSWORD");
        
-        Properties props = mailSender.getJavaMailProperties();
-        props.put("mail.transport.protocol", "smtp");
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.starttls.enable", "true");
-        props.put("mail.debug", "true"); 
-        return mailSender;
-    }
+       System.out.println(userName);
+       System.out.println(passWord);
+       
+//        String userName ="AKIAWDMD3L7MQ6XDXLIN";
+//        String passWord ="BLLaxHrv++8qqIsx73mO1KZq225tXqIHYMQBM2EYgToK";
+       
+       JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+       mailSender.setHost("email-smtp.ap-south-1.amazonaws.com");
+       mailSender.setPort(587); // TLS port
+
+       // Set your SMTP credentials directly
+       mailSender.setUsername(userName);
+       mailSender.setPassword(passWord);
+
+       // Set additional mail properties
+       Properties props = mailSender.getJavaMailProperties();
+       props.put("mail.transport.protocol", "smtp");
+       props.put("mail.smtp.auth", "true");
+       props.put("mail.smtp.starttls.enable", "true");
+       props.put("mail.debug", "true"); // Enables debug information in logs
+
+       return mailSender;
+   }
+  
 
 
     // Sends an OTP verification email to the applicant for identity verification.
