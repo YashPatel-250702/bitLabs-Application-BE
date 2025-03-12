@@ -98,7 +98,7 @@ public class ApplicantResumeService {
     // Retrieves the resume for the specified applicant by ID; returns a Resource
     // for the PDF file; throws CustomException if not found.
     public ResponseEntity<org.springframework.core.io.Resource> getResumeByApplicantId(long applicantId)
-            throws IOException {
+          {
 
         ApplicantResume applicantResume = applicantResumeRepository.findByApplicantId(applicantId);
         if (applicantResume != null) {
