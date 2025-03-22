@@ -31,7 +31,6 @@ public class DatabaseConfig {
         hikariConfig.setMaxLifetime(900000); 
         hikariConfig.setConnectionTimeout(30000);
         hikariConfig.setValidationTimeout(3000); 
-        hikariConfig.setLeakDetectionThreshold(20000); 
         
         return new HikariDataSource(hikariConfig);
     }

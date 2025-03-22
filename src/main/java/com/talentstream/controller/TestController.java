@@ -1,7 +1,5 @@
 package com.talentstream.controller;
 
-import java.net.URLDecoder;
-import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,7 +20,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.talentstream.dto.TestDTO;
-import com.talentstream.dto.TestResponseDTO;
 import com.talentstream.service.TestService;
 
 @RestController
@@ -48,7 +45,7 @@ public class TestController {
 				return ResponseEntity.badRequest().body(errors);
 			}
 
-			TestResponseDTO createdTest = testService.createTest(testDTO);
+			TestDTO createdTest = testService.createTest(testDTO);
 			LOGGER.info("Test '{}' created successfully with ID: {}", createdTest.getTestName(), createdTest.getId());
 			return ResponseEntity.ok("Test saved Successfully");
 		} catch (RuntimeException e) {
@@ -67,7 +64,7 @@ public class TestController {
 		try {
 			
 			
-			TestResponseDTO test = testService.getTestByName(testName);
+			TestDTO test = testService.getTestByName(testName);
 			LOGGER.info("Successfully retrieved test: {}", test.getTestName());
 			return ResponseEntity.ok(test); 
 		} catch (RuntimeException e) {

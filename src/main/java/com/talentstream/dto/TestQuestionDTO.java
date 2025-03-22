@@ -17,9 +17,6 @@ public class TestQuestionDTO {
 
     @NotBlank(message = "Answer cannot be blank")
     private String answer;
-
-    @NotNull(message = "Test ID cannot be null")
-    private Long testId;
     
     private String difficulty;
 
@@ -47,12 +44,7 @@ public class TestQuestionDTO {
     public void setAnswer(String answer) {
         this.answer = answer;
     }
-    public Long getTestId() {
-        return testId;
-    }
-    public void setTestId(Long testId) {
-        this.testId = testId;
-    }
+  
 	public String getDifficulty() {
 		return difficulty;
 	}
