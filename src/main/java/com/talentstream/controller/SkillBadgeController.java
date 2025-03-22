@@ -13,17 +13,17 @@ import com.talentstream.entity.ApplicantSkillBadge;
 import com.talentstream.service.SkillBadgeService;
 
 @RestController
-@RequestMapping("/skill-badges")
+@RequestMapping("/badges")
 public class SkillBadgeController {
 
     @Autowired
     private SkillBadgeService skillBadgeService;
     
-    @PostMapping("/save")
+    @PostMapping("/saveBadegs")
     public ResponseEntity<String> saveSkillBadge(@RequestBody ApplicantSkillBadgeRequestDTO request) {
     	ResponseEntity<String> result = skillBadgeService.saveApplicantSkillBadge(
             request.getApplicantId(),
-            request.getSkillBadgeName(), // Assuming service method needs skillBadgeName
+            request.getSkillBadgeName(), 
             request.getStatus()
         );
     	return result;

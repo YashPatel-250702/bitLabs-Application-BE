@@ -19,21 +19,22 @@ public class ZohoAuthService {
     private static final String TOKEN_URL = "https://accounts.zoho.com/oauth/v2/token";
 
   
-    private String clientId;
-    private String clientSecret;
-    private String refreshToken;
+    private String clientId="1000.N6ZQRDE1N00M0PWW9ECIESKXMENNEE";
+    private String clientSecret="c0c143e0bec3b6b282d7922c8d02924c6d0f6d1e4e";
+    private String refreshToken="1000.5b99532e2fba37aa0e3a456ba9b04793.43cb87365146be16c8d42438a694bb5c";
     private String accessToken;
-    private long expiryTime; // Stores token expiry time
+    private long expiryTime; 
+    
 
     /**
      * ✅ Fetch Zoho OAuth credentials from AWS Secrets Manager and initialize variables.
      */
-    private void loadCredentials() {
-        JSONObject credentials = new JSONObject(secretsManagerUtil.getSecret());
-        clientId = credentials.getString("ZOHO_CLIENT_ID");
-        clientSecret = credentials.getString("ZOHO_CLIENT_SECRET");
-        refreshToken = credentials.getString("ZOHO_REFRESH_TOKEN");
-    }
+//    private void loadCredentials() {
+//        JSONObject credentials = new JSONObject(secretsManagerUtil.getSecret());
+//        clientId = credentials.getString("ZOHO_CLIENT_ID");
+//        clientSecret = credentials.getString("ZOHO_CLIENT_SECRET");
+//        refreshToken = credentials.getString("ZOHO_REFRESH_TOKEN");
+//    }
 
     /**
      * ✅ Retrieve a valid access token (refresh if expired)
@@ -57,9 +58,9 @@ public class ZohoAuthService {
      */
     public void refreshAccessToken() {
         // Ensure credentials are loaded
-        if (clientId == null || clientSecret == null || refreshToken == null) {
-            loadCredentials();
-        }
+//        if (clientId == null || clientSecret == null || refreshToken == null) {
+//            loadCredentials();
+//        }
 
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders headers = new HttpHeaders();

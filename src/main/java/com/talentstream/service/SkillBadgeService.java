@@ -78,14 +78,17 @@ public class SkillBadgeService {
             return ResponseEntity.ok("ApplicantSkillBadge saved successfully");
 
         } catch (EntityNotFoundException e) {
+        	System.out.println("Error: "+e.getMessage());
             // Handle entity not found (applicant or skill badge)
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
                 .body("Error: " + e.getMessage());
         } catch (DataIntegrityViolationException e) {
+        	System.out.println("Error: "+e.getMessage());
             // Handle any database constraint violation errors
             return ResponseEntity.status(HttpStatus.CONFLICT)
                 .body("Database error: " + e.getMessage());
         } catch (Exception e) {
+        	System.out.println("Error: "+e.getMessage());
             // Catch any other unexpected exceptions
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .body("An unexpected error occurred: " + e.getMessage());

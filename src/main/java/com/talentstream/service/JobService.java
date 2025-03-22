@@ -1,26 +1,26 @@
 package com.talentstream.service;
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import javax.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import java.util.HashSet;
+
 import com.talentstream.dto.JobDTO;
 import com.talentstream.dto.RecuriterSkillsDTO;
 import com.talentstream.dto.ScreeningAnswerDTO;
 import com.talentstream.entity.Applicant;
-import com.talentstream.entity.CompanyProfile;
 import com.talentstream.entity.Job;
 import com.talentstream.entity.JobRecruiter;
 import com.talentstream.entity.JobSearchCriteria;
@@ -114,6 +114,7 @@ public class JobService {
         return matchingJobs;
     }
 
+    @Transactional(rollbackForClassName = "java.lamg.Exception")
     public ResponseEntity<String> saveJob(JobDTO jobDTO, Long jobRecruiterId) {
         try {
         	 System.out.println("Recuriter ID is: "+jobRecruiterId);

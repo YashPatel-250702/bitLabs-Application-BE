@@ -493,7 +493,7 @@ public class JobController {
 				}
 			}
 
-			return ResponseEntity.status(HttpStatus.CREATED).body("Jobs successfully posted from the CSV file.");
+			return ResponseEntity.status(HttpStatus.OK).body("Jobs successfully posted from the CSV file.");
 
 		} catch (IOException e) {
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
