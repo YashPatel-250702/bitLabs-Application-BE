@@ -45,8 +45,8 @@ public class TestController {
 				return ResponseEntity.badRequest().body(errors);
 			}
 
-			TestDTO createdTest = testService.createTest(testDTO);
-			LOGGER.info("Test '{}' created successfully with ID: {}", createdTest.getTestName(), createdTest.getId());
+			TestDTO test = testService.createTest(testDTO);
+			LOGGER.info("Test '{}' created successfully with ID: {}", test.getTestName(), test.getId());
 			return ResponseEntity.ok("Test saved Successfully");
 		} catch (RuntimeException e) {
 			LOGGER.warn("Test Already present with name: {}", testDTO.getTestName());

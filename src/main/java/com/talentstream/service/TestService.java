@@ -24,7 +24,7 @@ public class TestService {
     @Transactional
     public TestDTO createTest( TestDTO testDTO ) {
        
-        if (testRepository.findByTestName( testDTO.getTestName()).isPresent() ) {
+        if (testRepository.findByTestNameIgnoreCase( testDTO.getTestName()).isPresent() ) {
             throw new RuntimeException("Test with name '" + testDTO.getTestName() + "' already exists.");
         }
 
@@ -35,7 +35,7 @@ public class TestService {
 
 
     public TestDTO getTestByName(String testName) {
-        return testRepository.findByTestName(testName)
+        return testRepository.findByTestNameIgnoreCase(testName)
                 .map(this::convertToDTO)
                 .orElseThrow(() -> new IllegalArgumentException("Test with name '" + testName + "' not found"));
     }

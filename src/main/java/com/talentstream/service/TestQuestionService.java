@@ -25,7 +25,7 @@ public class TestQuestionService {
     @Transactional
     public String addQuestionsToTest( String testName, List<TestQuestionDTO> questionDTOs ) {
     
-        Test test = testRepository.findByTestName(testName)
+        Test test = testRepository.findByTestNameIgnoreCase(testName)
                 .orElseThrow(() -> new RuntimeException("Test not found"));
 
         List<TestQuestions> questions = new ArrayList<>();

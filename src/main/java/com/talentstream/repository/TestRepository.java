@@ -6,5 +6,5 @@ import java.util.Optional;
 
 public interface TestRepository extends JpaRepository<Test, Long> {
 
-    Optional<Test> findByTestName(String testName);
+	Optional<Test> findByTestNameIgnoreCase(String testName);
 }
