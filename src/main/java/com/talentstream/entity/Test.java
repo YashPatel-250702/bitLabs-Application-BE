@@ -17,7 +17,7 @@ public class Test {
     @ElementCollection
     private List<String> topicsCovered;
 
-    @OneToMany(mappedBy = "test", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "test", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<TestQuestions> questions;
 
     public Long getId() {

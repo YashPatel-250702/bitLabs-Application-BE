@@ -22,9 +22,9 @@ public class TestService {
     private TestRepository testRepository;
 
     @Transactional
-    public TestDTO createTest(TestDTO testDTO) {
+    public TestDTO createTest( TestDTO testDTO ) {
        
-        if (testRepository.findByTestName(testDTO.getTestName()).isPresent()) {
+        if (testRepository.findByTestName( testDTO.getTestName()).isPresent() ) {
             throw new RuntimeException("Test with name '" + testDTO.getTestName() + "' already exists.");
         }
 
@@ -40,7 +40,7 @@ public class TestService {
                 .orElseThrow(() -> new IllegalArgumentException("Test with name '" + testName + "' not found"));
     }
 
-    private Test convertToEntity(TestDTO testDTO) {
+    private Test convertToEntity( TestDTO testDTO ) {
         Test test = new Test();
         test.setTestName(testDTO.getTestName());
         test.setDuration(testDTO.getDuration());
