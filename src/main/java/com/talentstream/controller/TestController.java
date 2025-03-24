@@ -15,11 +15,13 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.talentstream.dto.TestDTO;
+import com.talentstream.dto.TestQuestionDTO;
 import com.talentstream.service.TestService;
 
 @RestController
@@ -73,6 +75,23 @@ public class TestController {
 		} catch (Exception e) {
 			LOGGER.error("Internal server error while retrieving test '{}'", testName, e);
 			return ResponseEntity.internalServerError().body("Internal server error while getting test");
+		}
+	}
+	
+	@PutMapping("/questions/{testName}")
+	public ResponseEntity<String> addQuestionsToTest(@PathVariable String testName,
+			@RequestBody List<TestQuestionDTO> questionDTOs) {
+		try {
+			String response = testService.addQuestionsToTest(testName, questionDTOs);
+			return ResponseEntity.ok(response);
+			
+		} catch (RuntimeException e) {
+			LOGGER.warn("Test Not found with name: {}", testName);
+			return ResponseEntity.badRequest().body(e.getMessage());
+		}
+		catch (Exception e) {
+			LOGGER.error("Error while creating test: {}", e.getMessage(), e);
+			return ResponseEntity.internalServerError().body("Error while adding questions: " + e.getMessage());
 		}
 	}
 }

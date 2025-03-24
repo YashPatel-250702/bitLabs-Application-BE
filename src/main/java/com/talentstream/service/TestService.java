@@ -39,6 +39,34 @@ public class TestService {
                 .map(this::convertToDTO)
                 .orElseThrow(() -> new IllegalArgumentException("Test with name '" + testName + "' not found"));
     }
+    
+    
+    @Transactional
+    public String addQuestionsToTest(String testName, List<TestQuestionDTO> questionDTOs) {
+       
+        Test test = testRepository.findByTestNameIgnoreCase(testName)
+                .orElseThrow(() -> new RuntimeException("Test not found"));
+
+       
+        List<TestQuestions> existingQuestions = test.getQuestions(); 
+
+        for (TestQuestionDTO questionDTO : questionDTOs) {
+            TestQuestions question = new TestQuestions();
+            question.setTest(test);
+            question.setQuestion(questionDTO.getQuestion());
+            question.setOptions(questionDTO.getOptions());
+            question.setAnswer(questionDTO.getAnswer());
+            question.setDifficulty(questionDTO.getDifficulty());
+
+            existingQuestions.add(question);
+        }
+
+        test.setNumberOfQuestions(existingQuestions.size());
+        testRepository.save(test);
+
+        return questionDTOs.size() + " questions added successfully to Test Name: " + testName;
+    }
+
 
     private Test convertToEntity( TestDTO testDTO ) {
         Test test = new Test();
