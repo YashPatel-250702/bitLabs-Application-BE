@@ -1,9 +1,23 @@
 package com.talentstream.entity;
 
 import java.util.List;
-import javax.persistence.*;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import org.hibernate.annotations.Type;
+import org.hibernate.annotations.TypeDef;
+
+import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 
 @Entity
+@TypeDef(name = "jsonb", typeClass = JsonBinaryType.class) 
 public class Test {
     
     @Id
@@ -14,7 +28,11 @@ public class Test {
     private String duration;
     private Integer numberOfQuestions;
 
-    @ElementCollection
+//    @ElementCollection
+//    private List<String> topicsCovered;
+    
+    @Type(type = "jsonb")
+    @Column(columnDefinition = "jsonb") 
     private List<String> topicsCovered;
 
     @OneToMany(mappedBy = "test", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
