@@ -64,8 +64,7 @@ public class TestController {
 	public ResponseEntity<?> getTestByName(@PathVariable String testName) {
 		LOGGER.info("Fetching test details for: {}", testName);
 		try {
-			
-			
+				
 			TestDTO test = testService.getTestByName(testName);
 			LOGGER.info("Successfully retrieved test: {}", test.getTestName());
 			return ResponseEntity.ok(test); 

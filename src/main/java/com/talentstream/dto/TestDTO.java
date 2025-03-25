@@ -23,7 +23,7 @@ public class TestDTO {
 
     private List<TestQuestionDTO> questions;
 
-    // Getters and Setters
+
     public Long getId() {
         return id;
     }
