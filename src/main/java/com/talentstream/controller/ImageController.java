@@ -1,6 +1,6 @@
 package com.talentstream.controller;
 
-import java.io.IOException;
+import java.util.Base64;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,16 +23,16 @@ import com.talentstream.service.ImageService;
 @RestController
 @RequestMapping("/image")
 public class ImageController {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(ImageController.class);
-	
+
 	@Autowired
 	private ImageService imageService;
-	
+
 	@PostMapping("/upload/{fileName}")
-	public String fileUpload(@PathVariable String  fileName, @RequestParam MultipartFile imageFile) {
+	public String fileUpload(@PathVariable String fileName, @RequestParam MultipartFile imageFile) {
 		try {
-			String filename = imageService.uploadImageToAWS(imageFile,fileName );
+			String filename = imageService.uploadImageToAWS(imageFile, fileName);
 			logger.info("Image uploaded successfully: {}", filename);
 			return filename + " Image uploaded successfully";
 		} catch (CustomException ce) {
@@ -44,24 +44,23 @@ public class ImageController {
 		} catch (MaxUploadSizeExceededException e) {
 			logger.error("Max upload size exceeded during image upload");
 			return "File size should be less than 1MB.";
+		} catch (Exception e) {
+			logger.error(e.getMessage());
+			return "Something went wrong Internal Server Error";
 		}
 	}
 
 	@GetMapping("/getImage/{fileName}")
-	public ResponseEntity<byte[]> getCompanyLogo(@PathVariable String fileName) {
+	public ResponseEntity<String> getCompanyLogo(@PathVariable String fileName) {
 		try {
-			byte[] imageBytes = imageService.getImageFromAWs(fileName);
+			String url = imageService.getImageFromAWs(fileName);
 			logger.info("Image downloaded successfully for fileName: {}", fileName);
-			return ResponseEntity.ok()
-					.contentType(MediaType.IMAGE_JPEG)
-					.body(imageBytes);
+			return ResponseEntity.ok().body(url);
 
 		} catch (CustomException ce) {
-			// Handle exception appropriately, e.g., return a 404 Not Found response
 			logger.error("Error occurred while downloading image  for fileName: {}", fileName);
 			return ResponseEntity.status(ce.getStatus()).body(null);
-		}
+		} 
 	}
-	
 
 }

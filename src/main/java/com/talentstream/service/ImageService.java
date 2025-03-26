@@ -2,6 +2,7 @@ package com.talentstream.service;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.net.URL;
 
 import org.json.JSONObject;
 import org.springframework.http.HttpStatus;
@@ -50,14 +51,14 @@ public class ImageService {
 		if (imageFile.getSize() > 1 * 1024 * 1024) {
 			throw new CustomException("File size should be less than 1MB.", HttpStatus.BAD_REQUEST);
 		}
-		
+
 		String contentType = imageFile.getContentType();
-		
+
 		if (!"image/jpeg".equals(contentType) && !"image/png".equals(contentType)) {
 			throw new CustomException("Only JPG and PNG file types are allowed.", HttpStatus.BAD_REQUEST);
 		}
 
-		String objectKey = fileName + " .jpg";
+		String objectKey = "Images/"+fileName + ".png";
 
 		try {
 			AmazonS3 s3Client = initializeS3Client();
@@ -78,38 +79,22 @@ public class ImageService {
 
 	}
 
-	public byte[] getImageFromAWs(String fileName) {
+	public String getImageFromAWs(String fileName) {
 
 		try {
 
-			String objectKey = fileName + " .jpg";
+			String objectKey = "Images/"+fileName + ".png";
 
 			AmazonS3 s3Client = initializeS3Client();
-			S3Object s3Object = s3Client.getObject(new GetObjectRequest(bucketName, objectKey));
-			S3ObjectInputStream inputStream = s3Object.getObjectContent();
 
-			MediaType mediaType;
-			
-			if (objectKey.toLowerCase().endsWith(".png")) {
-				mediaType = MediaType.IMAGE_PNG;
-			} else if (objectKey.toLowerCase().endsWith(".jpg") || objectKey.toLowerCase().endsWith(".jpeg")) {
-				mediaType = MediaType.IMAGE_JPEG;
-			} else {
-				throw new RuntimeException("Unsupported image file format for fileName: " + fileName);
-			}
-
-			byte[] bytes = IOUtils.toByteArray(inputStream); 
-
-			return bytes;
+			String url = s3Client.getUrl(bucketName, objectKey).toString();
+			System.out.println("Url: "+url);
+			return url;
 
 		} catch (Exception e) {
-			String errorMessage = "Internal Server Error";
-			byte[] errorBytes = errorMessage.getBytes();
-			ByteArrayInputStream errorStream = new ByteArrayInputStream(errorBytes);
-
 			System.out.println(e.getMessage());
-			return errorBytes;
+			return "Error while getting image";
 		}
-	}
 
+	}
 }
