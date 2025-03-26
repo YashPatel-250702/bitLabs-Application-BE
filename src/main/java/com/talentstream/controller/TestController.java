@@ -9,6 +9,7 @@ import javax.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
@@ -70,7 +71,7 @@ public class TestController {
 			return ResponseEntity.ok(test); 
 		} catch (RuntimeException e) {
 			LOGGER.warn("Test not found: {}", testName);
-			return ResponseEntity.badRequest().body(e.getMessage());
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
 		} catch (Exception e) {
 			LOGGER.error("Internal server error while retrieving test '{}'", testName, e);
 			return ResponseEntity.internalServerError().body("Internal server error while getting test");
@@ -85,8 +86,8 @@ public class TestController {
 			return ResponseEntity.ok(response);
 			
 		} catch (RuntimeException e) {
-			LOGGER.warn("Test Not found with name: {}", testName);
-			return ResponseEntity.badRequest().body(e.getMessage());
+			LOGGER.warn("Test not found: {}", testName);
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
 		}
 		catch (Exception e) {
 			LOGGER.error("Error while creating test: {}", e.getMessage(), e);
