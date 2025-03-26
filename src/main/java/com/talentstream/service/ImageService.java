@@ -1,12 +1,10 @@
 package com.talentstream.service;
 
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.net.URL;
+import java.util.Base64;
 
 import org.json.JSONObject;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -87,8 +85,13 @@ public class ImageService {
 	        if (!s3Client.doesObjectExist(bucketName, objectKey)) {
 	            throw new CustomException("Image not found", HttpStatus.NOT_FOUND);
 	        }
+	        
+	        
 
-	        return s3Client.getUrl(bucketName, objectKey).toString();
+	        S3Object s3Object = s3Client.getObject(new GetObjectRequest(bucketName, objectKey));
+	        S3ObjectInputStream inputStream = s3Object.getObjectContent();
+	        byte[] bytes = IOUtils.toByteArray(inputStream);
+	        return Base64.getEncoder().encodeToString(bytes);
 
 	    } catch (CustomException e) {
 	        throw new CustomException(e.getMessage(), HttpStatus.NOT_FOUND);
