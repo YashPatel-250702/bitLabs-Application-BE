@@ -78,23 +78,24 @@ public class ImageService {
 		}
 
 	}
-
 	public String getImageFromAWs(String fileName) {
+	    try {
+	        String objectKey = "Images/" + fileName + ".png";
+	        AmazonS3 s3Client = initializeS3Client();
 
-		try {
+	    
+	        if (!s3Client.doesObjectExist(bucketName, objectKey)) {
+	            throw new CustomException("Image not found", HttpStatus.NOT_FOUND);
+	        }
 
-			String objectKey = "Images/"+fileName + ".png";
+	        return s3Client.getUrl(bucketName, objectKey).toString();
 
-			AmazonS3 s3Client = initializeS3Client();
-
-			String url = s3Client.getUrl(bucketName, objectKey).toString();
-			System.out.println("Url: "+url);
-			return url;
-
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-			return "Error while getting image";
-		}
-
+	    } catch (CustomException e) {
+	        throw new CustomException(e.getMessage(), HttpStatus.NOT_FOUND);
+	    } 
+	    catch (Exception e) {
+	        throw new CustomException("Error while getting image", HttpStatus.INTERNAL_SERVER_ERROR);
+	    }
 	}
+
 }
