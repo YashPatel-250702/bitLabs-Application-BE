@@ -1,9 +1,11 @@
 package com.talentstream.service;
 
 import java.io.IOException;
-import java.util.Base64;
+import java.net.URL;
 
 import org.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -14,91 +16,92 @@ import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
-import com.amazonaws.services.s3.model.GetObjectRequest;
 import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.PutObjectRequest;
-import com.amazonaws.services.s3.model.S3Object;
-import com.amazonaws.services.s3.model.S3ObjectInputStream;
-import com.amazonaws.util.IOUtils;
 import com.talentstream.AwsSecretsManagerUtil;
 import com.talentstream.exception.CustomException;
 
 @Service
 public class ImageService {
 
-	private String bucketName;
+    private static final Logger logger = LoggerFactory.getLogger(ImageService.class);
+    private String bucketName;
+    private static final String FOLDERNAME = "Images/";
 
-	private AmazonS3 initializeS3Client() {
+    private AmazonS3 initializeS3Client() {
+        String secret = AwsSecretsManagerUtil.getSecret();
+        JSONObject jsonObject = new JSONObject(secret);
 
-		String secrete = AwsSecretsManagerUtil.getSecret();
-		JSONObject jsonObject = new JSONObject(secrete);
+        final String ACCESS_KEY = jsonObject.getString("AWS_ACCESS_KEY_ID");
+        final String SECRET_KEY = jsonObject.getString("AWS_SECRET_ACCESS_KEY");
+        final String REGION = jsonObject.getString("AWS_REGION");
+        bucketName = jsonObject.getString("AWS_S3_BUCKET_NAME");
 
-		final String ACCESS_KEY = jsonObject.getString("AWS_ACCESS_KEY_ID");
-		final String SECRET_KEY = jsonObject.getString("AWS_SECRET_ACCESS_KEY");
+        BasicAWSCredentials awsCredentials = new BasicAWSCredentials(ACCESS_KEY, SECRET_KEY);
+        return AmazonS3ClientBuilder.standard()
+                .withCredentials(new AWSStaticCredentialsProvider(awsCredentials))
+                .withRegion(Regions.fromName(REGION))
+                .build();
+    }
 
-		final String REGION = jsonObject.getString("AWS_REGION");
-		bucketName = jsonObject.getString("AWS_S3_BUCKET_NAME");
+    public String uploadImageToAWS(MultipartFile imageFile) {
+    	
+        if (imageFile.getSize() > 1 * 1024 * 1024) {
+            throw new CustomException("File size should be less than 1MB.", HttpStatus.BAD_REQUEST);
+        }
 
-		BasicAWSCredentials awsCredentials = new BasicAWSCredentials(ACCESS_KEY, SECRET_KEY);
-		return AmazonS3ClientBuilder.standard().withCredentials(new AWSStaticCredentialsProvider(awsCredentials))
-				.withRegion(Regions.fromName(REGION)).build();
-	}
+        if (!"image/png".equals(imageFile.getContentType())) {
+            throw new CustomException("Only PNG file types are allowed.", HttpStatus.BAD_REQUEST);
+        }
 
-	public String uploadImageToAWS(MultipartFile imageFile, String fileName) {
+        String fileName = imageFile.getOriginalFilename();
+        String objectKey = FOLDERNAME + fileName + ".png";
 
-		if (imageFile.getSize() > 1 * 1024 * 1024) {
-			throw new CustomException("File size should be less than 1MB.", HttpStatus.BAD_REQUEST);
-		}
+        try {
+        	
+            AmazonS3 s3Client = initializeS3Client();
+            ObjectMetadata objectMetadata = new ObjectMetadata();
+            objectMetadata.setContentType(imageFile.getContentType());
+            objectMetadata.setContentLength(imageFile.getSize());
 
-		String contentType = imageFile.getContentType();
+            s3Client.putObject(new PutObjectRequest(bucketName, objectKey, imageFile.getInputStream(), objectMetadata));
 
-		if (!"image/jpeg".equals(contentType) && !"image/png".equals(contentType)) {
-			throw new CustomException("Only JPG and PNG file types are allowed.", HttpStatus.BAD_REQUEST);
-		}
+            logger.info("Image uploaded successfully: {}", fileName);
+            return objectKey;
 
-		String objectKey = "Images/"+fileName + ".png";
+        } catch (AmazonServiceException e) {
+            logger.error("AWS  error while uploading image: {}", e.getMessage());
+            throw new RuntimeException("AWS S3 error: " + e.getMessage(), e);
+        } catch (IOException e) {
+            logger.error("error while uploading image: {}", e.getMessage());
+            throw new RuntimeException("I/O error: " + e.getMessage(), e);
+        } catch (Exception e) {
+            logger.error("Unexpected error while uploading image: {}", e.getMessage());
+            throw new CustomException("Internal Server Error: Unable to upload image.", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 
-		try {
-			AmazonS3 s3Client = initializeS3Client();
+    public String getImageURLFromAWs(String fileName) {
+        try {
+        	
+            AmazonS3 s3Client = initializeS3Client();
+            String objectKey = FOLDERNAME + fileName + ".png";
 
-			ObjectMetadata objectMetadata = new ObjectMetadata();
-			objectMetadata.setContentType(imageFile.getContentType());
-			objectMetadata.setContentLength(imageFile.getSize());
+            if (!s3Client.doesObjectExist(bucketName, objectKey)) {
+                logger.warn("Image not found: {}", fileName);
+                throw new CustomException("Image not found: " + fileName + ".png", HttpStatus.NOT_FOUND);
+            }
 
-			s3Client.putObject(new PutObjectRequest(bucketName, objectKey, imageFile.getInputStream(), objectMetadata));
+            URL url = s3Client.getUrl(bucketName, objectKey);
+            logger.info("Image retrieved successfully: {}", fileName);
+            return url.toString();
 
-			return objectKey;
-
-		} catch (AmazonServiceException ase) {
-			throw new RuntimeException("Failed to upload image to S3", ase);
-		} catch (IOException e) {
-			throw new RuntimeException("Error processing image file", e);
-		}
-
-	}
-	public String getImageFromAWs(String fileName) {
-	    try {
-	        String objectKey = "Images/" + fileName + ".png";
-	        AmazonS3 s3Client = initializeS3Client();
-
-	    
-	        if (!s3Client.doesObjectExist(bucketName, objectKey)) {
-	            throw new CustomException("Image not found", HttpStatus.NOT_FOUND);
-	        }
-	        
-	        
-
-	        S3Object s3Object = s3Client.getObject(new GetObjectRequest(bucketName, objectKey));
-	        S3ObjectInputStream inputStream = s3Object.getObjectContent();
-	        byte[] bytes = IOUtils.toByteArray(inputStream);
-	        return Base64.getEncoder().encodeToString(bytes);
-
-	    } catch (CustomException e) {
-	        throw new CustomException(e.getMessage(), HttpStatus.NOT_FOUND);
-	    } 
-	    catch (Exception e) {
-	        throw new CustomException("Error while getting image", HttpStatus.INTERNAL_SERVER_ERROR);
-	    }
-	}
-
+        } catch (CustomException e) {
+            logger.error("Error while retrieving image: {}", e.getMessage());
+            throw new CustomException(e.getMessage(), HttpStatus.NOT_FOUND);
+        } catch (Exception e) {
+            logger.error("Unexpected error while retrieving image: {}", e.getMessage());
+            throw new CustomException("Internal Server Error: Unable to retrieve image.", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 }
