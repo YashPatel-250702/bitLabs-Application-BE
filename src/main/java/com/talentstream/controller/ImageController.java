@@ -26,6 +26,8 @@ public class ImageController {
 			String filename = imageService.uploadImageToAWS(imageFile);
 			return ResponseEntity.ok(filename + " Image uploaded successfully");
 
+		} catch (CustomException e) {
+			return ResponseEntity.status(e.getStatus()).body(e.getMessage());
 		} catch (Exception e) {
 
 			return ResponseEntity.internalServerError().body("Internal Server Error: Unable to upload image.");
