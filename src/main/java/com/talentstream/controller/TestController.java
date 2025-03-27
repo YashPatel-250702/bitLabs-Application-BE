@@ -69,7 +69,9 @@ public class TestController {
 			TestDTO test = testService.getTestByName(testName);
 			LOGGER.info("Successfully retrieved test: {}", test.getTestName());
 			return ResponseEntity.ok(test); 
+			
 		} catch (RuntimeException e) {
+			
 			LOGGER.warn("Test not found: {}", testName);
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
 		} catch (Exception e) {
