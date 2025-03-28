@@ -145,7 +145,7 @@ public class CompanyLogoService {
 				throw new RuntimeException("Unsupported image file format for applicant ID: " + jobRecruiterId);
 			}
 
-			byte[] bytes = IOUtils.toByteArray(inputStream); // Convert input stream to byte array
+			byte[] bytes = IOUtils.toByteArray(inputStream);
 
 			return bytes;
 

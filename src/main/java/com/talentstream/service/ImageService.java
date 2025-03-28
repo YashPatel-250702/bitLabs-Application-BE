@@ -90,6 +90,7 @@ public class ImageService {
 		try {
 
 			AmazonS3 s3Client = initializeS3Client();
+			
 			String objectKey = FOLDERNAME + fileName + ".svg";
 
 			if (!s3Client.doesObjectExist(bucketName, objectKey)) {

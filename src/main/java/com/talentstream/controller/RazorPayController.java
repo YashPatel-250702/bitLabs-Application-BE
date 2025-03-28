@@ -31,8 +31,6 @@ import com.talentstream.entity.CreateOrderRequest;
 import com.talentstream.entity.JobRecruiter;
 import com.talentstream.entity.RazorPayOrder;
 import com.talentstream.entity.VerifyPaymentRequest;
-import com.talentstream.exception.ErrorResponse;
-import com.talentstream.response.SuccessResponseHandler;
 import com.talentstream.service.RazorPayService;
 
 @RestController
@@ -61,14 +59,14 @@ public class RazorPayController {
 				});
 				return ResponseEntity.badRequest().body(errors);
 			}
-			JobRecruiter job = razorPayService.getRecruiter(createOrderDto.getRecruiter_id());
+			JobRecruiter recruiter = razorPayService.getRecruiter(createOrderDto.getRecruiter_id());
 
 			logger.info("Calling RazorPay Service method to create order with details", createOrderDto);
 			Order order = razorPayService.createOrder(createOrderDto.getAmount(), "INR",
 					createOrderDto.getRecruiter_id());
 			if (order == null) {
 				return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body(
-						new ErrorResponse("Unable to create order", HttpStatus.SERVICE_UNAVAILABLE.value(), "Failed"));
+						"Unable to create order");
 			}
 
 			logger.info("New Order Created Successfully Inserting data into Table");
@@ -77,7 +75,7 @@ public class RazorPayController {
 			RazorPayOrder razorPayOrder = new RazorPayOrder();
 
 			razorPayOrder.setOrderId(orderId);
-			razorPayOrder.setJobRecruiter(job);
+			razorPayOrder.setJobRecruiter(recruiter);
 			razorPayOrder.setOrderAmount(createOrderDto.getAmount());
 			razorPayOrder.setCurrency(order.get("currency"));
 			razorPayOrder.setOrderStatus(order.get("status"));
@@ -92,21 +90,20 @@ public class RazorPayController {
 			RazorPayDto razorPayDto = new RazorPayDto(orderId, createOrderDto.getRecruiter_id());
 
 			logger.info("Returning success response ", razorPayDto);
-			return ResponseEntity.status(HttpStatus.CREATED)
-					.body(new SuccessResponseHandler(HttpStatus.OK.value(), razorPayDto));
+			return ResponseEntity.status(HttpStatus.OK)
+					.body( razorPayDto);
 
 		} catch (Exception e) {
 			logger.error("Some error occured", e.getMessage());
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-					.body(new ErrorResponse("Internal Error Creating Payment Order: " + e.getMessage(),
-							HttpStatus.INTERNAL_SERVER_ERROR.value(), "Internal Server"));
+					.body("Internal Error Creating Payment Order: " + e.getMessage());
 		}
 	}
 
 	// Post API To Verify Payment Details and Update Status
-	@PostMapping("/verifyPayment")
+	@PostMapping("/verifyPayment/{recruiterId}")
 	public ResponseEntity<Object> verifyPayment(@Valid @RequestBody VerifyPaymentRequest paymentDetails,
-			BindingResult bindingResult) {
+			BindingResult bindingResult, @PathVariable Long recruiterId) throws Exception {
 
 		logger.info("Coming to verify payment Controller With Request body", paymentDetails);
 
@@ -121,6 +118,8 @@ public class RazorPayController {
 				});
 				return ResponseEntity.badRequest().body(errors);
 			}
+			
+			JobRecruiter recruiter = razorPayService.getRecruiter(recruiterId);
 
 			logger.info("Calling service method to verify payment .");
 
@@ -133,7 +132,7 @@ public class RazorPayController {
 				LocalDateTime now = LocalDateTime.now();
 
 				String paymentStatus = razorPayService.getPaymentStatus(paymentDetails.getPayment_id());
-				Optional<RazorPayOrder> razorPayOrder = razorPayService.getOrderById(paymentDetails.getOrder_id());
+				Optional<RazorPayOrder> razorPayOrder = razorPayService.getOrderById(paymentDetails.getOrder_id(),recruiterId);
 				if (razorPayOrder.isPresent()) {
 					RazorPayOrder order = razorPayOrder.get();
 					order.setOrderStatus(paymentStatus);
@@ -142,22 +141,21 @@ public class RazorPayController {
 					razorPayService.updateOrderDetails(order);
 					logger.info("Returning Success Response");
 					return ResponseEntity.status(HttpStatus.OK)
-							.body(new SuccessResponseHandler(HttpStatus.OK.value(), "Payment Verify Successfully"));
+							.body("Payment Verify Successfully");
 				}
 				return ResponseEntity.status(HttpStatus.NOT_FOUND)
-						.body(new ErrorResponse("No Payment Order Found", HttpStatus.NOT_FOUND.value(), "Not Found"));
+						.body("No Payment Order Found");
 
 			}
 
 			logger.info("Returning Error Response");
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-					.body(new ErrorResponse("Payment Verification Failed Please Check Order Id, Payment Id and Signature", HttpStatus.NOT_FOUND.value(), "Failed"));
+					.body("Payment Verification Failed Please Check Order Id, Payment Id and Signature");
 
 		} catch (RazorpayException e) {
 			logger.error("Some error occured", e.getMessage());
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-					.body(new ErrorResponse("Internal Error While Verifying Payment Order",
-							HttpStatus.INTERNAL_SERVER_ERROR.value(), "Internal Server"));
+					.body("Internal Error While Verifying Payment Order");
 		}
 	}
 
@@ -170,7 +168,7 @@ public class RazorPayController {
 
 			if (recruiterId == null) {
 				return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-						.body(new ErrorResponse("Please Provide Valid Recruiter Id", HttpStatus.BAD_REQUEST.value(), "Failed"));
+						.body("Please Provide Valid Recruiter Id");
 			}
 
 			List<RazorPayOrder> details = razorPayService.getPaymentDetilsById(recruiterId);
@@ -188,17 +186,16 @@ public class RazorPayController {
 				paymentDetails.setIsActive(details.get(0).isActive());
 				
 				return ResponseEntity.status(HttpStatus.OK)
-						.body(new SuccessResponseHandler(HttpStatus.OK.value(), paymentDetails));
+						.body( paymentDetails);
 			}
 
 			logger.info("Payment details not found for recruiter id: ", recruiterId);
 			return ResponseEntity.status(HttpStatus.NOT_FOUND)
-					.body(new ErrorResponse("No Active Payment Order Found For Recruiter: "+recruiterId, HttpStatus.NOT_FOUND.value(), "Not Found"));
+					.body("No Active Payment Order Found For Recruiter: "+recruiterId);
 		} catch (Exception e) {
 			logger.error("Internal server error occurred while retrieving all jobs.", e);
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-					.body(new ErrorResponse("Internal Error Getting Payment Order" + e.getMessage(),
-							HttpStatus.INTERNAL_SERVER_ERROR.value(), "Internal Server"));
+					.body("Internal Error Getting Payment Order" + e.getMessage());
 		}
 	}
 
