@@ -82,8 +82,8 @@ public class RazorPayService {
 	}
  
  
-	public Optional<RazorPayOrder> getOrderById(String orderId) throws RuntimeException {
-		return payRepositry.findById(orderId);
+	public Optional<RazorPayOrder> getOrderById(String orderId,Long recruiterId) throws RuntimeException {
+		return payRepositry.findByOrderIdAndJobRecruiter_RecruiterId(orderId,recruiterId);
 	}
  
 	public void updateOrderDetails(RazorPayOrder razorPayOrder) {
@@ -96,4 +96,3 @@ public class RazorPayService {
         return payRepositry.findPaymentDetails(recruiterId);
     }
 }
-

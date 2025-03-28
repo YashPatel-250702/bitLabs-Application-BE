@@ -1,6 +1,7 @@
 package com.talentstream.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -10,6 +11,9 @@ import com.talentstream.entity.RazorPayOrder;
  
  
 public interface RazorPayRepositry extends JpaRepository<RazorPayOrder, String> {
+	
+	Optional<RazorPayOrder> findByOrderIdAndJobRecruiter_RecruiterId(String orderId, Long recruiterId);
+
  
     // Custom query method to find RazorPayOrder by recruiterId
 	@Query("SELECT r FROM RazorPayOrder r WHERE r.jobRecruiter.recruiterId = :recruiterId AND r.isActive = true")
