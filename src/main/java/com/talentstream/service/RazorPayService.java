@@ -1,6 +1,6 @@
 package com.talentstream.service;
 
-import java.util.List;
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 import org.json.JSONObject;
@@ -10,89 +10,106 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import com.razorpay.Order;
-import com.razorpay.Payment;
 import com.razorpay.RazorpayClient;
-import com.razorpay.RazorpayException;
+import com.talentstream.dto.PaymentDetailsDto;
 import com.talentstream.entity.JobRecruiter;
 import com.talentstream.entity.RazorPayOrder;
 import com.talentstream.exception.CustomException;
 import com.talentstream.repository.JobRecruiterRepository;
 import com.talentstream.repository.RazorPayRepositry;
 import com.talentstream.util.RazorPayUtills;
- 
+
 @Service
 public class RazorPayService {
- 
+
 	@Autowired
 	private RazorPayRepositry payRepositry;
- 
+
 	@Autowired
 	private RazorpayClient razorpayClient;
 
-    @Value("${razorpay.secret}")
-    private String razorPaySecret;
-    
-    
-    @Autowired
-    private JobRecruiterRepository jobRecruiterRepository;
-    public JobRecruiter getRecruiter(Long recruiterId) throws Exception{
-    	Optional<JobRecruiter> jobRecruiter=jobRecruiterRepository.findById(recruiterId);
-    	if(jobRecruiter.isPresent()) {
-    		return jobRecruiter.get();
-    	}
-    	 throw new CustomException("JobRecruiter with ID " + recruiterId + " not found.", HttpStatus.NOT_FOUND);
-    
-    }
-	public Order createOrder(Double amount, String currency,Long recruiterId) throws Exception {
+	@Value("${razorpay.secret}")
+	private String razorPaySecret;
 
-		JSONObject orderRequest = new JSONObject();
-		orderRequest.put("amount", amount*100); // amount in paise so we are multiply with 100
-		orderRequest.put("currency", currency);
-		orderRequest.put("payment_capture", 1);         
-		//orderRequest.put("recruiterId", recruiterId);
- 
-		Order order = razorpayClient.orders.create(orderRequest);
- 
-		return order;
- 
-	}
+	@Autowired
+	private JobRecruiterRepository jobRecruiterRepository;
 
- 
-	public void saveOrder(RazorPayOrder razorPayOrder) {	   
-	    payRepositry.save(razorPayOrder);
-	}
- 
-	public boolean verifyPayment(String paymentId, String orderId, String razorpaySignature) {
-		  String payload = orderId + '|' + paymentId;
-		  try {
-		     boolean verifySignature = RazorPayUtills.verifySignature(payload, razorpaySignature, razorPaySecret);
-		     System.out.println("Verified Signature: "+verifySignature);
-		     return verifySignature;
-		  } catch (Exception e) {
-		    e.printStackTrace();
-		    return false;
-		  }
+	public Order createOrder(Double amount, String currency, Long recruiterId) throws Exception {
+
+		JobRecruiter recruiter = jobRecruiterRepository.findById(recruiterId).orElseThrow(
+				() -> new CustomException("JobRecruiter with ID " + recruiterId + " not found.", HttpStatus.NOT_FOUND));
+
+		Optional<RazorPayOrder> activeOrder = payRepositry.findByJobRecruiter_RecruiterIdAndIsActive(recruiterId, true);
+
+		if (activeOrder.isPresent()) {
+			throw new CustomException("Recruiter already has an active order", HttpStatus.BAD_REQUEST);
 		}
 
- 
-	public String getPaymentStatus(String payment_id) throws RazorpayException {
-		Payment payment = razorpayClient.payments.fetch(payment_id);
-      	String paymentStatus = payment.get("status");
-		return paymentStatus;
-	}
- 
- 
-	public Optional<RazorPayOrder> getOrderById(String orderId,Long recruiterId) throws RuntimeException {
-		return payRepositry.findByOrderIdAndJobRecruiter_RecruiterId(orderId,recruiterId);
-	}
- 
-	public void updateOrderDetails(RazorPayOrder razorPayOrder) {
+		JSONObject orderRequest = new JSONObject();
+		orderRequest.put("amount", amount * 100);
+		orderRequest.put("currency", currency);
+		orderRequest.put("payment_capture", 1);
+
+		Order order = razorpayClient.orders.create(orderRequest);
+
+		if (order == null)
+			return null;
+
+		RazorPayOrder razorPayOrder = new RazorPayOrder();
+		razorPayOrder.setOrderId(order.get("id"));
+		razorPayOrder.setOrderAmount(amount);
+		razorPayOrder.setJobRecruiter(recruiter);
+		razorPayOrder.setCurrency(currency);
+		razorPayOrder.setIsActive(false);
+		razorPayOrder.setOrderStatus("created");
+		razorPayOrder.setOrderDate(LocalDateTime.now());
+		razorPayOrder.setCreatedAt(LocalDateTime.now());
 		payRepositry.save(razorPayOrder);
+
+		return order;
 	}
 
- 
-    public  List<RazorPayOrder> getPaymentDetilsById(Long recruiterId) {
-    	System.out.println("Recruiter id: "+recruiterId);
-        return payRepositry.findPaymentDetails(recruiterId);
-    }
+	public boolean verifyPayment(String paymentId, String orderId, String razorpaySignature, Long recruiterId)
+			throws Exception {
+
+		JobRecruiter recruiter = jobRecruiterRepository.findById(recruiterId).orElseThrow(
+				() -> new CustomException("JobRecruiter with ID " + recruiterId + " not found.", HttpStatus.NOT_FOUND));
+
+		RazorPayOrder order = payRepositry
+				.findByOrderIdAndJobRecruiter_RecruiterIdAndOrderStatus(orderId, recruiterId, "created")
+				.orElseThrow(() -> new CustomException("No created Order not found", HttpStatus.NOT_FOUND));
+
+		String payload = orderId + '|' + paymentId;
+		boolean isVerified = RazorPayUtills.verifySignature(payload, razorpaySignature, razorPaySecret);
+		if (!isVerified) {
+			throw new CustomException("Payment verification failed", HttpStatus.UNAUTHORIZED);
+		}
+
+		String paymentStatus = razorpayClient.payments.fetch(paymentId).get("status");
+		order.setOrderStatus(paymentStatus);
+		order.setIsActive("captured".equals(paymentStatus));
+		order.setUpdatedAt(LocalDateTime.now());
+		payRepositry.save(order);
+
+		return "captured".equals(paymentStatus);
+	}
+
+	public PaymentDetailsDto getActivePayments(Long recruiterId) {
+		RazorPayOrder order = payRepositry.findByJobRecruiter_RecruiterIdAndIsActive(recruiterId, true)
+				.orElseThrow(() -> new CustomException("No Active order found to recruiter id: " + recruiterId,
+						HttpStatus.NOT_FOUND));
+		return convertToDTO(order);
+	}
+
+	private PaymentDetailsDto convertToDTO(RazorPayOrder order) {
+		PaymentDetailsDto dto = new PaymentDetailsDto();
+		dto.setOrderId(order.getOrderId());
+		dto.setIsActive(order.getIsActive());
+		dto.setAmount(order.getOrderAmount());
+		dto.setOrderDate(order.getOrderDate());
+		dto.setOrderStatus(order.getOrderStatus());
+		dto.setRecruiterId(order.getJobRecruiter().getRecruiterId());
+		return dto;
+
+	}
 }

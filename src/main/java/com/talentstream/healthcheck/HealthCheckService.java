@@ -17,7 +17,7 @@ public class HealthCheckService {
     public boolean isBackendHealthy() {
         try {
             // Replace the URL with your actual health check endpoint
-            String healthCheckUrl = "http://localhost:8080/health";
+            String healthCheckUrl = "http://localhost:8081/health";
             String result = restTemplate.getForObject(healthCheckUrl, String.class);
  
             // Customize this condition based on the expected response from your health check
