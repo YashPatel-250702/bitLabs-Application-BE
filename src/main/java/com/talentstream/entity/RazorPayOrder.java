@@ -80,6 +80,10 @@ public class RazorPayOrder {
 		return jobRecruiter;
 	}
  
+	public void setActive(boolean isActive) {
+		this.isActive = isActive;
+	}
+
 	public void setJobRecruiter(JobRecruiter jobRecruiter) {
 		this.jobRecruiter = jobRecruiter;
 	}

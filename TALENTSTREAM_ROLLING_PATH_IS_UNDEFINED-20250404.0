@@ -1,0 +1,245 @@
+04-04-2025_20:41:47.025{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.talentstream.TalentStreamApplicationTests], using SpringBootContextLoader
+04-04-2025_20:41:47.032{UTC}|report-tool|INFO ||o.s.t.c.s.AbstractContextLoader|Could not detect default resource locations for test class [com.talentstream.TalentStreamApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+04-04-2025_20:41:47.033{UTC}|report-tool|INFO ||o.s.t.c.s.AnnotationConfigContextLoaderUtils|Could not detect default configuration classes for test class [com.talentstream.TalentStreamApplicationTests]: TalentStreamApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+04-04-2025_20:41:47.166{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Found @SpringBootConfiguration com.talentstream.TalentStreamApplication for test class com.talentstream.TalentStreamApplicationTests
+04-04-2025_20:41:47.280{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+04-04-2025_20:41:47.295{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3fc08eec, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5cad8b7d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7b02e036, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@25243bc1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1e287667, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2e6ee0bc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4201a617, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@467f77a5, org.springframework.test.context.event.EventPublishingTestExecutionListener@1bb9aa43, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@420bc288, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@df5f5c0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@308a6984, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@66b72664, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7a34b7b8, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@58cd06cb]
+04-04-2025_20:41:47.702{UTC}|report-tool|WARN ||o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer|
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Patel/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Patel/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+04-04-2025_20:41:47.707{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+04-04-2025_20:41:47.723{UTC}|report-tool|INFO ||c.t.TalentStreamApplicationTests|Starting TalentStreamApplicationTests using Java 21.0.6 on DESKTOP-2JRH28M with PID 71000 (started by Patel in C:\Yash Patel\Bitlab-workspace\bitLabs-web-application)
+04-04-2025_20:41:47.724{UTC}|report-tool|DEBUG||c.t.TalentStreamApplicationTests|Running with Spring Boot v2.7.9, Spring v5.3.25
+04-04-2025_20:41:47.725{UTC}|report-tool|INFO ||c.t.TalentStreamApplicationTests|No active profile set, falling back to 1 default profile: "default"
+04-04-2025_20:41:48.906{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+04-04-2025_20:41:49.104{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 182 ms. Found 37 JPA repository interfaces.
+04-04-2025_20:41:52.875{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+04-04-2025_20:41:53.463{UTC}|report-tool|INFO ||c.z.h.p.HikariPool|HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1382a7d8
+04-04-2025_20:41:53.465{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+04-04-2025_20:41:53.744{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+04-04-2025_20:41:53.828{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+04-04-2025_20:41:54.051{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+04-04-2025_20:41:54.284{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+04-04-2025_20:42:02.808{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+04-04-2025_20:42:02.819{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+04-04-2025_20:42:02.966{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04-04-2025_20:42:04.675{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+04-04-2025_20:42:04.720{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+04-04-2025_20:42:10.166{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.talentstream.TalentStreamApplicationTests], using SpringBootContextLoader
+04-04-2025_20:42:10.171{UTC}|report-tool|INFO ||o.s.t.c.s.AbstractContextLoader|Could not detect default resource locations for test class [com.talentstream.TalentStreamApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+04-04-2025_20:42:10.172{UTC}|report-tool|INFO ||o.s.t.c.s.AnnotationConfigContextLoaderUtils|Could not detect default configuration classes for test class [com.talentstream.TalentStreamApplicationTests]: TalentStreamApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+04-04-2025_20:42:10.282{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Found @SpringBootConfiguration com.talentstream.TalentStreamApplication for test class com.talentstream.TalentStreamApplicationTests
+04-04-2025_20:42:10.391{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+04-04-2025_20:42:10.405{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3fc08eec, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5cad8b7d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7b02e036, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@25243bc1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1e287667, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2e6ee0bc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4201a617, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@467f77a5, org.springframework.test.context.event.EventPublishingTestExecutionListener@1bb9aa43, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@420bc288, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@df5f5c0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@308a6984, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@66b72664, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7a34b7b8, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@58cd06cb]
+04-04-2025_20:42:10.890{UTC}|report-tool|WARN ||o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer|
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Patel/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Patel/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+04-04-2025_20:42:10.910{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+04-04-2025_20:42:10.922{UTC}|report-tool|INFO ||c.t.TalentStreamApplicationTests|Starting TalentStreamApplicationTests using Java 21.0.6 on DESKTOP-2JRH28M with PID 67872 (started by Patel in C:\Yash Patel\Bitlab-workspace\bitLabs-web-application)
+04-04-2025_20:42:10.923{UTC}|report-tool|DEBUG||c.t.TalentStreamApplicationTests|Running with Spring Boot v2.7.9, Spring v5.3.25
+04-04-2025_20:42:10.924{UTC}|report-tool|INFO ||c.t.TalentStreamApplicationTests|No active profile set, falling back to 1 default profile: "default"
+04-04-2025_20:42:12.213{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+04-04-2025_20:42:12.402{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 171 ms. Found 37 JPA repository interfaces.
+04-04-2025_20:42:16.110{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+04-04-2025_20:42:16.568{UTC}|report-tool|INFO ||c.z.h.p.HikariPool|HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@14d53884
+04-04-2025_20:42:16.572{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+04-04-2025_20:42:16.889{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+04-04-2025_20:42:17.000{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+04-04-2025_20:42:17.293{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+04-04-2025_20:42:17.486{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+04-04-2025_20:42:26.101{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+04-04-2025_20:42:26.129{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+04-04-2025_20:42:26.211{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04-04-2025_20:42:28.531{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+04-04-2025_20:42:28.578{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+04-04-2025_20:42:32.801{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4bd5086d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30ebad79, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f1a6259, org.springframework.security.web.header.HeaderWriterFilter@3ececd11, org.springframework.security.web.authentication.logout.LogoutFilter@1231e446, com.talentstream.filter.JwtRequestFilter@5f7e2ca8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60a0094a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32561cd5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ce9a671, org.springframework.security.web.session.SessionManagementFilter@25712d03, org.springframework.security.web.access.ExceptionTranslationFilter@223f8c82, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61e7d7f2]
+04-04-2025_20:42:35.588{UTC}|report-tool|INFO ||c.t.TalentStreamApplicationTests|Started TalentStreamApplicationTests in 25.133 seconds (JVM running for 26.801)
+04-04-2025_20:42:35.887{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.talentstream.TestServices.RazorPayServiceTest], using SpringBootContextLoader
+04-04-2025_20:42:35.889{UTC}|report-tool|INFO ||o.s.t.c.s.AbstractContextLoader|Could not detect default resource locations for test class [com.talentstream.TestServices.RazorPayServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+04-04-2025_20:42:35.890{UTC}|report-tool|INFO ||o.s.t.c.s.AnnotationConfigContextLoaderUtils|Could not detect default configuration classes for test class [com.talentstream.TestServices.RazorPayServiceTest]: RazorPayServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+04-04-2025_20:42:35.903{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Found @SpringBootConfiguration com.talentstream.TalentStreamApplication for test class com.talentstream.TestServices.RazorPayServiceTest
+04-04-2025_20:42:35.913{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+04-04-2025_20:42:35.913{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@d0089e5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6acee861, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@f60910d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1a1c68f5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@13da85f2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@e4afa08, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5a9fa35, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c0b71b5, org.springframework.test.context.event.EventPublishingTestExecutionListener@3bb99ed3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@62fab916, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@28488f2e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@fe9d54b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@78519d63, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4f54b976, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@23096e4d]
+04-04-2025_20:42:36.226{UTC}|report-tool|ERROR||o.s.t.c.TestContextManager|Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1a1c68f5] to prepare test instance [com.talentstream.TestServices.RazorPayServiceTest@23685592]
+org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
+Misplaced or misused argument matcher detected here:
+
+-> at com.talentstream.TestServices.RazorPayServiceTest.createOrder_FailedToCreateRazorpayOrder(RazorpayServiceTest.java:122)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains("foo"))
+
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.initMocks(MockitoTestExecutionListener.java:83)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:60)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:95)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:91)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:60)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+04-04-2025_20:42:36.313{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+04-04-2025_20:42:36.315{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+04-04-2025_20:42:36.426{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.
+04-04-2025_20:43:57.215{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.talentstream.TestServices.RazorPayServiceTest], using SpringBootContextLoader
+04-04-2025_20:43:57.221{UTC}|report-tool|INFO ||o.s.t.c.s.AbstractContextLoader|Could not detect default resource locations for test class [com.talentstream.TestServices.RazorPayServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+04-04-2025_20:43:57.221{UTC}|report-tool|INFO ||o.s.t.c.s.AnnotationConfigContextLoaderUtils|Could not detect default configuration classes for test class [com.talentstream.TestServices.RazorPayServiceTest]: RazorPayServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+04-04-2025_20:43:57.353{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Found @SpringBootConfiguration com.talentstream.TalentStreamApplication for test class com.talentstream.TestServices.RazorPayServiceTest
+04-04-2025_20:43:57.473{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+04-04-2025_20:43:57.490{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@306851c7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@12bcd0c0, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4879f0f2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@47db5fa5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@354fc8f0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@41813449, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4678a2eb, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5b43fbf6, org.springframework.test.context.event.EventPublishingTestExecutionListener@1080b026, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@58ebfd03, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5b07730f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1fdfafd2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@a4b2d8f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@dcfda20, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6d304f9d]
+04-04-2025_20:43:57.887{UTC}|report-tool|WARN ||o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer|
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Patel/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Patel/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+04-04-2025_20:43:57.889{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+04-04-2025_20:43:57.913{UTC}|report-tool|INFO ||c.t.T.RazorPayServiceTest|Starting RazorPayServiceTest using Java 21.0.6 on DESKTOP-2JRH28M with PID 70868 (started by Patel in C:\Yash Patel\Bitlab-workspace\bitLabs-web-application)
+04-04-2025_20:43:57.913{UTC}|report-tool|DEBUG||c.t.T.RazorPayServiceTest|Running with Spring Boot v2.7.9, Spring v5.3.25
+04-04-2025_20:43:57.914{UTC}|report-tool|INFO ||c.t.T.RazorPayServiceTest|No active profile set, falling back to 1 default profile: "default"
+04-04-2025_20:43:59.251{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+04-04-2025_20:43:59.467{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 204 ms. Found 37 JPA repository interfaces.
+04-04-2025_20:44:03.143{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+04-04-2025_20:44:03.625{UTC}|report-tool|INFO ||c.z.h.p.HikariPool|HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@341964d0
+04-04-2025_20:44:03.628{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+04-04-2025_20:44:03.888{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+04-04-2025_20:44:03.969{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+04-04-2025_20:44:04.244{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+04-04-2025_20:44:04.428{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+04-04-2025_20:44:09.627{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.talentstream.TestServices.RazorPayServiceTest], using SpringBootContextLoader
+04-04-2025_20:44:09.633{UTC}|report-tool|INFO ||o.s.t.c.s.AbstractContextLoader|Could not detect default resource locations for test class [com.talentstream.TestServices.RazorPayServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+04-04-2025_20:44:09.634{UTC}|report-tool|INFO ||o.s.t.c.s.AnnotationConfigContextLoaderUtils|Could not detect default configuration classes for test class [com.talentstream.TestServices.RazorPayServiceTest]: RazorPayServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+04-04-2025_20:44:09.777{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Found @SpringBootConfiguration com.talentstream.TalentStreamApplication for test class com.talentstream.TestServices.RazorPayServiceTest
+04-04-2025_20:44:09.906{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+04-04-2025_20:44:09.923{UTC}|report-tool|INFO ||o.s.b.t.c.SpringBootTestContextBootstrapper|Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@306851c7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@12bcd0c0, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4879f0f2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@47db5fa5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@354fc8f0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@41813449, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4678a2eb, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5b43fbf6, org.springframework.test.context.event.EventPublishingTestExecutionListener@1080b026, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@58ebfd03, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5b07730f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1fdfafd2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@a4b2d8f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@dcfda20, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6d304f9d]
+04-04-2025_20:44:10.435{UTC}|report-tool|WARN ||o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer|
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Patel/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Patel/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+04-04-2025_20:44:10.441{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+04-04-2025_20:44:10.464{UTC}|report-tool|INFO ||c.t.T.RazorPayServiceTest|Starting RazorPayServiceTest using Java 21.0.6 on DESKTOP-2JRH28M with PID 30124 (started by Patel in C:\Yash Patel\Bitlab-workspace\bitLabs-web-application)
+04-04-2025_20:44:10.464{UTC}|report-tool|DEBUG||c.t.T.RazorPayServiceTest|Running with Spring Boot v2.7.9, Spring v5.3.25
+04-04-2025_20:44:10.465{UTC}|report-tool|INFO ||c.t.T.RazorPayServiceTest|No active profile set, falling back to 1 default profile: "default"
+04-04-2025_20:44:11.937{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+04-04-2025_20:44:12.170{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 219 ms. Found 37 JPA repository interfaces.
+04-04-2025_20:44:12.612{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+04-04-2025_20:44:12.633{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+04-04-2025_20:44:12.991{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04-04-2025_20:44:16.304{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+04-04-2025_20:44:16.457{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+04-04-2025_20:44:17.676{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+04-04-2025_20:44:18.261{UTC}|report-tool|INFO ||c.z.h.p.HikariPool|HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15c4b1a4
+04-04-2025_20:44:18.264{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+04-04-2025_20:44:18.954{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+04-04-2025_20:44:19.140{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+04-04-2025_20:44:19.642{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+04-04-2025_20:44:19.907{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+04-04-2025_20:44:23.059{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2533444a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@781ce680, org.springframework.security.web.context.SecurityContextPersistenceFilter@42becaf6, org.springframework.security.web.header.HeaderWriterFilter@13f05e8e, org.springframework.security.web.authentication.logout.LogoutFilter@6dad9f5e, com.talentstream.filter.JwtRequestFilter@214738c1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27b8daa1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51761e07, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31167d7, org.springframework.security.web.session.SessionManagementFilter@6ba076ef, org.springframework.security.web.access.ExceptionTranslationFilter@4e5c1817, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@50ee7857]
+04-04-2025_20:44:25.370{UTC}|report-tool|INFO ||c.t.T.RazorPayServiceTest|Started RazorPayServiceTest in 27.838 seconds (JVM running for 29.172)
+04-04-2025_20:44:25.902{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+04-04-2025_20:44:25.906{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+04-04-2025_20:44:26.011{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.
+04-04-2025_20:44:29.909{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+04-04-2025_20:44:29.923{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+04-04-2025_20:44:30.051{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04-04-2025_20:44:32.165{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+04-04-2025_20:44:32.212{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+04-04-2025_20:44:36.353{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10aa4210, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a3ece9d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1cc20796, org.springframework.security.web.header.HeaderWriterFilter@373636f3, org.springframework.security.web.authentication.logout.LogoutFilter@17c373d3, com.talentstream.filter.JwtRequestFilter@38388639, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e343477, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63c9017b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@675d209c, org.springframework.security.web.session.SessionManagementFilter@500039b3, org.springframework.security.web.access.ExceptionTranslationFilter@2ca08575, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@307f6602]
+04-04-2025_20:44:38.521{UTC}|report-tool|INFO ||c.t.T.RazorPayServiceTest|Started RazorPayServiceTest in 28.554 seconds (JVM running for 29.921)
+04-04-2025_20:44:38.975{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+04-04-2025_20:44:38.977{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+04-04-2025_20:44:39.072{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.
