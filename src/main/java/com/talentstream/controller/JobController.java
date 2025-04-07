@@ -43,6 +43,7 @@ import com.talentstream.entity.RecuriterSkills;
 import com.talentstream.entity.ScreeningQuestion;
 import com.talentstream.exception.CustomException;
 import com.talentstream.service.CompanyLogoService;
+import com.talentstream.service.EventService;
 import com.talentstream.service.JobService;
 
 @RestController
@@ -60,6 +61,8 @@ public class JobController {
 	public JobController(JobService jobService) {
 		this.jobService = jobService;
 	}
+	
+	
 
 	@PostMapping("/recruiters/saveJob/{jobRecruiterId}")
 	public ResponseEntity<String> saveJob(@Valid @RequestBody JobDTO jobDTO, BindingResult bindingResult,
@@ -86,6 +89,7 @@ public class JobController {
 			return ResponseEntity.badRequest().body(responseBody.toString());
 		}
 		try {
+			
 			return jobService.saveJob(jobDTO, jobRecruiterId);
 		} catch (CustomException ce) {
 			logger.error("CustomException occurred while saving job: {}", ce.getMessage());
@@ -443,8 +447,8 @@ public class JobController {
 
 					jobDTO.setMaxSalary(Double.parseDouble(fields[5]));
 
-					jobDTO.setCreationDate(
-							LocalDate.parse(fields[6].trim().split(" ")[0], DateTimeFormatter.ofPattern("M/d/yyyy")));
+					//jobDTO.setCreationDate(
+					//		LocalDate.parse(fields[6].trim().split(" ")[0], DateTimeFormatter.ofPattern("M/d/yyyy")));
 
 					jobDTO.setDescription(fields[7]);
 

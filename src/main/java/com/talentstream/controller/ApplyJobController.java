@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -47,6 +48,7 @@ public class ApplyJobController {
 
 	final ModelMapper modelMapper = new ModelMapper();
 	@Autowired
+	@Lazy
 	private ApplyJobService applyJobService;
 	@Autowired
 	private ScheduleInterviewService scheduleInterviewService;

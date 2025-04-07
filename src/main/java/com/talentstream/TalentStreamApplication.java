@@ -11,10 +11,12 @@ import javax.net.ssl.X509TrustManager;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 
+import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
@@ -29,6 +31,8 @@ import org.slf4j.LoggerFactory;
 @EnableWebMvc
 @EnableScheduling
 @EnableAspectJAutoProxy
+@EnableAsync
+@EnableRabbit
 public class TalentStreamApplication {
 	private static final Logger logger = LoggerFactory.getLogger(TalentStreamApplication.class);
 
@@ -89,4 +93,10 @@ public class TalentStreamApplication {
 				.build();
 	}
 
+	
+	   @Bean
+	    public RestTemplate restTemplate() {
+	        return new RestTemplate();
+	    }
+	
 }

@@ -2,6 +2,7 @@ package com.talentstream.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +17,7 @@ import com.talentstream.exception.CustomException;
 public class ViewJobController {
 	 
 	@Autowired
+	@Lazy
     private ViewJobService viewJobService;
 	private static final Logger logger = LoggerFactory.getLogger(ApplicantProfileController.class); 
 	   @GetMapping("/applicant/viewjob/{jobId}")

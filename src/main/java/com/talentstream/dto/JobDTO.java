@@ -1,5 +1,6 @@
 package com.talentstream.dto;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Set;
@@ -16,7 +17,7 @@ import com.talentstream.entity.ApplicantSkillBadge;
 import com.talentstream.entity.ApplicantSkills;
 import com.talentstream.entity.ScreeningQuestion;
 
-public class JobDTO {
+public class JobDTO implements Serializable {
 	private Long id;
 	private Long recruiterId;
 	private byte[] logoFile;

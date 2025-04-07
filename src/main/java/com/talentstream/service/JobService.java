@@ -61,6 +61,11 @@ public class JobService {
 	    @Autowired
 	    private ApplicantRepository applicantRepository;
 	    
+	    
+	    @Autowired
+		private EventService eventService;
+		
+	    
     @Autowired
     public JobService(JobRepository jobRepository, RecuriterSkillsRepository skillsRepository,CompanyProfileRepository companyProfileRepository) {
         this.jobRepository = jobRepository;
@@ -144,13 +149,16 @@ public class JobService {
                 }
  
                 jobRepository.save(job);
+              eventService.sendNotification(jobDTO);
                 return ResponseEntity.status(HttpStatus.OK).body("Job saved successfully.");
             } else {
                 throw new CustomException("JobRecruiter with ID " + jobRecruiterId + " not found.", HttpStatus.NOT_FOUND);
             }
         } catch (CustomException ce) {
+        	System.out.println(ce.getMessage());
             throw ce;
         } catch (Exception e) {
+        	System.out.println("Error: "+e.getMessage());
             throw new CustomException("Error while saving job", HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
