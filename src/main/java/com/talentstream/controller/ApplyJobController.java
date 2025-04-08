@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -35,7 +36,9 @@ import com.talentstream.entity.MatchTypes;
 import com.talentstream.entity.ScheduleInterview;
 import com.talentstream.service.ApplyJobService;
 import com.talentstream.service.ScheduleInterviewService;
+import com.talentstream.util.GloablFallback;
 
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 import jakarta.persistence.EntityNotFoundException;
 
 import com.talentstream.exception.CustomException;
@@ -47,6 +50,7 @@ public class ApplyJobController {
 
 	final ModelMapper modelMapper = new ModelMapper();
 	@Autowired
+	@Lazy
 	private ApplyJobService applyJobService;
 	@Autowired
 	private ScheduleInterviewService scheduleInterviewService;
@@ -56,10 +60,17 @@ public class ApplyJobController {
 
 	private static final Logger logger = LoggerFactory.getLogger(ApplyJobController.class);
 
+	@Autowired
+	private GloablFallback fallback;
+
+	public ResponseEntity<String> globalFallBack(Throwable t) {
+		return fallback.globalFallback(t);
+	}
+	
+
+	@RateLimiter(name = "applyJobRateLimiter", fallbackMethod = "globalFallBack")
 	@PostMapping("/applicants/applyjob/{applicantId}/{jobId}")
-	public ResponseEntity<String> saveJobForApplicant(
-			@PathVariable long applicantId,
-			@PathVariable long jobId) {
+	public ResponseEntity<String> saveJobForApplicant(@PathVariable long applicantId, @PathVariable long jobId) {
 		try {
 			logger.info("Request received to save job for applicantId: {} and jobId: {}", applicantId, jobId);
 
@@ -76,6 +87,7 @@ public class ApplyJobController {
 		}
 	}
 
+	@RateLimiter(name = "applyJobRateLimiter", fallbackMethod = "globalFallBack")
 	@GetMapping("/appliedapplicants/{jobId}")
 	public ResponseEntity<List<ApplyJob>> getAppliedApplicantsForJob(@PathVariable Long jobId) {
 		try {
@@ -89,11 +101,10 @@ public class ApplyJobController {
 		}
 	}
 
+	@RateLimiter(name = "applyJobRateLimiter", fallbackMethod = "globalFallBack")
 	@GetMapping("/getAppliedJobs/{applicantId}")
-	public ResponseEntity<List<JobDTO>> getAppliedJobsForApplicant(
-			@PathVariable long applicantId,
-			@RequestParam(defaultValue = "0") int page,
-			@RequestParam(defaultValue = "10") int size) {
+	public ResponseEntity<List<JobDTO>> getAppliedJobsForApplicant(@PathVariable long applicantId,
+			@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size) {
 
 		try {
 			logger.info("Request received to get applied jobs for applicantId: {}", applicantId);
@@ -115,6 +126,7 @@ public class ApplyJobController {
 		}
 	}
 
+	@RateLimiter(name = "applyJobRateLimiter", fallbackMethod = "globalFallBack")
 	@GetMapping("/countAppliedJobs/{applicantId}")
 	public ResponseEntity<?> countAppliedJobsForApplicant(@PathVariable long applicantId) {
 		try {
@@ -151,17 +163,12 @@ public class ApplyJobController {
 
 	@PostMapping("/recruiter/{jobRecruiterId}/appliedapplicants1")
 	public ResponseEntity<List<AppliedApplicantInfoDTO>> getAppliedApplicantsForRecruiter(
-			@PathVariable long jobRecruiterId,
-			@RequestParam(required = false) String name,
-			@RequestParam(required = false) String email,
-			@RequestParam(required = false) String mobileNumber,
-			@RequestParam(required = false) String jobTitle,
-			@RequestParam(required = false) String applicantStatus,
-			@RequestParam(required = false) Integer minimumExperience,
-			@RequestParam(required = false) String skillName,
+			@PathVariable long jobRecruiterId, @RequestParam(required = false) String name,
+			@RequestParam(required = false) String email, @RequestParam(required = false) String mobileNumber,
+			@RequestParam(required = false) String jobTitle, @RequestParam(required = false) String applicantStatus,
+			@RequestParam(required = false) Integer minimumExperience, @RequestParam(required = false) String skillName,
 			@RequestParam(required = false) String minimumQualification,
-			@RequestParam(required = false) String location,
-			@RequestBody MatchTypes matchTypes) {
+			@RequestParam(required = false) String location, @RequestBody MatchTypes matchTypes) {
 		try {
 			logger.info("Request received to get applied applicants for recruiterId: {}", jobRecruiterId);
 			List<AppliedApplicantInfoDTO> appliedApplicants = applyJobService.getAppliedApplicants2(jobRecruiterId,
@@ -199,9 +206,10 @@ public class ApplyJobController {
 		}
 	}
 
+	
+	@RateLimiter(name = "applyJobRateLimiter", fallbackMethod = "globalFallBack")
 	@PostMapping("/scheduleInterview/{applyJobId}")
-	public ResponseEntity<Void> createScheduleInterview(
-			@PathVariable Long applyJobId,
+	public ResponseEntity<Void> createScheduleInterview(@PathVariable Long applyJobId,
 			@RequestBody ScheduleInterviewDTO scheduleInterviewDTO) {
 		try {
 			logger.info("Request received to create schedule interview for applyJobId: {}", applyJobId);
@@ -217,9 +225,7 @@ public class ApplyJobController {
 	}
 
 	@PutMapping("/recruiters/applyjob-update-status/{applyJobId}/{newStatus}")
-	public ResponseEntity<String> updateApplicantStatus(
-			@PathVariable Long applyJobId,
-			@PathVariable String newStatus) {
+	public ResponseEntity<String> updateApplicantStatus(@PathVariable Long applyJobId, @PathVariable String newStatus) {
 		try {
 			logger.info("Request received to update applicant status for applyJobId: {} to status: {}", applyJobId,
 					newStatus);
@@ -238,8 +244,7 @@ public class ApplyJobController {
 
 	@GetMapping("/recruiter/{recruiterId}/interviews/{status}")
 	public ResponseEntity<List<ApplicantJobInterviewDTO>> getApplicantJobInterviewInfo(
-			@PathVariable("recruiterId") long recruiterId,
-			@PathVariable("status") String status) {
+			@PathVariable("recruiterId") long recruiterId, @PathVariable("status") String status) {
 		try {
 			logger.info("Request received to get applicant job interview info for recruiterId: {} with status: {}",
 					recruiterId, status);
@@ -333,8 +338,8 @@ public class ApplyJobController {
 	}
 
 	@GetMapping("/getScheduleInterviews/applicant/{applyJobId}/{applicantId}")
-	public ResponseEntity<List<ScheduleInterviewDTO>> getScheduleInterviews(
-			@PathVariable Long applicantId, @PathVariable Long applyJobId) {
+	public ResponseEntity<List<ScheduleInterviewDTO>> getScheduleInterviews(@PathVariable Long applicantId,
+			@PathVariable Long applyJobId) {
 		try {
 			logger.info("Request received to get schedule interviews for applicant {} and job {}", applicantId,
 					applyJobId);

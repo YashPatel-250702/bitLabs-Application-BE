@@ -61,6 +61,8 @@ public class JobService {
 	    @Autowired
 	    private ApplicantRepository applicantRepository;
 	    
+	
+	    
     @Autowired
     public JobService(JobRepository jobRepository, RecuriterSkillsRepository skillsRepository,CompanyProfileRepository companyProfileRepository) {
         this.jobRepository = jobRepository;
@@ -143,7 +145,9 @@ public class JobService {
                     job.setScreeningQuestions(screeningQuestions);
                 }
  
+                
                 jobRepository.save(job);
+               
                 return ResponseEntity.status(HttpStatus.OK).body("Job saved successfully.");
             } else {
                 throw new CustomException("JobRecruiter with ID " + jobRecruiterId + " not found.", HttpStatus.NOT_FOUND);

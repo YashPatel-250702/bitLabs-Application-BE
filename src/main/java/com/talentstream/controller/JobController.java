@@ -44,6 +44,7 @@ import com.talentstream.entity.ScreeningQuestion;
 import com.talentstream.exception.CustomException;
 import com.talentstream.service.CompanyLogoService;
 import com.talentstream.service.JobService;
+import com.talentstream.service.NotificationProducer;
 
 @RestController
 @RequestMapping("/job")
@@ -60,6 +61,9 @@ public class JobController {
 	public JobController(JobService jobService) {
 		this.jobService = jobService;
 	}
+    @Autowired
+    private NotificationProducer notificationProducer;
+   
 
 	@PostMapping("/recruiters/saveJob/{jobRecruiterId}")
 	public ResponseEntity<String> saveJob(@Valid @RequestBody JobDTO jobDTO, BindingResult bindingResult,
@@ -86,7 +90,9 @@ public class JobController {
 			return ResponseEntity.badRequest().body(responseBody.toString());
 		}
 		try {
-			return jobService.saveJob(jobDTO, jobRecruiterId);
+					ResponseEntity<String> saveJob = jobService.saveJob(jobDTO, jobRecruiterId);
+					 notificationProducer.sendToQueue("1 job posted in bitLabs");
+					 return saveJob;
 		} catch (CustomException ce) {
 			logger.error("CustomException occurred while saving job: {}", ce.getMessage());
 			return ResponseEntity.status(ce.getStatus()).body(ce.getMessage());
@@ -414,6 +420,7 @@ public class JobController {
 		}
 
 		try {
+			    int jobcount=1;
 			try (BufferedReader reader = new BufferedReader(new InputStreamReader(file.getInputStream()));
 					CSVReader csvReader = new CSVReader(reader)) {
 
@@ -443,8 +450,8 @@ public class JobController {
 
 					jobDTO.setMaxSalary(Double.parseDouble(fields[5]));
 
-					jobDTO.setCreationDate(
-							LocalDate.parse(fields[6].trim().split(" ")[0], DateTimeFormatter.ofPattern("M/d/yyyy")));
+//					jobDTO.setCreationDate(
+//							LocalDate.parse(fields[6].trim().split(" ")[0], DateTimeFormatter.ofPattern("M/d/yyyy")));
 
 					jobDTO.setDescription(fields[7]);
 
@@ -490,9 +497,12 @@ public class JobController {
 					Long recruiter_id = Long.parseLong(fields[19]);
 
 					jobService.saveJob(jobDTO, recruiter_id);
+					jobcount++;
 				}
 			}
 
+			
+			notificationProducer.sendToQueue(jobcount+" Job posted in bitLabs");
 			return ResponseEntity.status(HttpStatus.OK).body("Jobs successfully posted from the CSV file.");
 
 		} catch (IOException e) {

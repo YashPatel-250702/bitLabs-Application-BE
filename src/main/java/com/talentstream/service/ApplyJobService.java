@@ -13,6 +13,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.PageRequest;
@@ -86,6 +87,7 @@ public class ApplyJobService {
 	@Autowired
 	private ApplicantTestRepository applicantTestRepository;
 	@Autowired
+	@Lazy
 	private ViewJobService viewJobService;
 	@Autowired
 	private ApplicantSkillBadgeRepository applicantSkillBadgeRepository;

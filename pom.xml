@@ -65,13 +65,18 @@
 			<version>1.70</version> <!-- Use the latest stable version -->
 		</dependency>
 
-<!--Hibernate type dependency-->
+		<!--Hibernate type dependency-->
 		<dependency>
 			<groupId>com.vladmihalcea</groupId>
 			<artifactId>hibernate-types-52</artifactId>
 			<version>2.21.1</version>
 		</dependency>
 
+		<!--RABBITMQ Dependency-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
@@ -90,6 +95,14 @@
 			<artifactId>springfox-boot-starter</artifactId>
 			<version>3.0.0</version> <!-- Use the latest version -->
 		</dependency>
+
+	
+		<dependency>
+			<groupId>io.github.resilience4j</groupId>
+			<artifactId>resilience4j-spring-boot2</artifactId>
+			<version>1.7.1</version> 
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -126,7 +139,7 @@
 			<version>3.11.2</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
@@ -136,14 +149,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>

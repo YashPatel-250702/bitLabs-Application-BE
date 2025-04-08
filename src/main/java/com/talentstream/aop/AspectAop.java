@@ -20,6 +20,7 @@ public class AspectAop {
         System.out.println("Method execution starting: " + className + "." + methodName + "()");
     }
 
+    
     @After("execution(* com.talentstream.service.*.*(..))")
     public void printMessageAfterMethod(JoinPoint joinPoint) {
         String className = joinPoint.getTarget().getClass().getName();
