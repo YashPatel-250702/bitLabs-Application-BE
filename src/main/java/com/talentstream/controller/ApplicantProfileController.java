@@ -203,7 +203,7 @@ public class ApplicantProfileController {
         }
 
         applicantProfileService.updateBasicDetails(id, basicDetailsDTO);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok().body("Basic details updated successfully");
     }
 
     @PutMapping("/{id}/professional-details")

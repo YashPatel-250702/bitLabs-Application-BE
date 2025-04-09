@@ -1887,3 +1887,25 @@ java.lang.NoSuchMethodException: class org.springframework.http.ResponseEntity c
 08-04-2025_19:45:01.317{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRlbHlhc2gyNTA3MDJAZ21haWwuY29tIiwiZXhwIjoxNzQ0MTQwMDg4LCJpYXQiOjE3NDQxMDQwODh9.sULWBgtDj3Ia6DPMsiIM1DGAzTXYKOI_MOelvo0HGXI
 08-04-2025_19:45:01.317{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXRlbHlhc2gyNTA3MDJAZ21haWwuY29tIiwiZXhwIjoxNzQ0MTQwMDg4LCJpYXQiOjE3NDQxMDQwODh9.sULWBgtDj3Ia6DPMsiIM1DGAzTXYKOI_MOelvo0HGXI
 08-04-2025_19:45:01.318{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: patelyash250702@gmail.com
+08-04-2025_19:48:36.984{UTC}|report-tool|INFO ||o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin|Application shutdown requested.
+08-04-2025_19:48:36.997{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Waiting for workers to finish.
+08-04-2025_19:48:37.302{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Successfully waited for workers to finish.
+08-04-2025_19:48:37.308{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Pausing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+08-04-2025_19:48:37.309{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+08-04-2025_19:48:37.313{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Destroying Spring FrameworkServlet 'dispatcherServlet'
+08-04-2025_19:48:37.320{UTC}|report-tool|WARN ||o.a.c.l.WebappClassLoaderBase|The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+08-04-2025_19:48:37.334{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+08-04-2025_19:48:37.340{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Destroying ProtocolHandler ["http-nio-0.0.0.0-8081"]
+08-04-2025_19:48:37.355{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Shutdown ignored - container is already stopped
+08-04-2025_19:48:37.510{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+08-04-2025_19:48:37.513{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+08-04-2025_19:48:37.560{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.

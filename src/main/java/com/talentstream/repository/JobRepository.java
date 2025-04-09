@@ -2,6 +2,7 @@ package com.talentstream.repository;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 import org.springframework.data.domain.Page;
@@ -12,6 +13,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import com.talentstream.dto.JobDTO;
 import com.talentstream.entity.ApplicantSkills;
 import com.talentstream.entity.Job;
 
@@ -116,5 +118,8 @@ public interface JobRepository extends JpaRepository<Job, Long>, JpaSpecificatio
 			@Param("preferredLocations") Set<String> preferredLocations,
 			@Param("experience") Integer experience,
 			@Param("specialization") String specialization);
+	
+	
+	
 
 }

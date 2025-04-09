@@ -199,6 +199,7 @@ public class JobDTO {
 		private String companyname;
 	    private String mobilenumber;
 	    private String email;
+	    
 	    private LocalDate creationDate;
 	    private String jobStatus="Apply Now";
 	    private String jobURL;
