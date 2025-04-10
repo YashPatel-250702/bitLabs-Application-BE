@@ -1,26 +1,23 @@
 package com.talentstream.service;
 
-import com.talentstream.exception.CustomException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
-import com.talentstream.dto.JobDTO;
+import com.talentstream.dto.GetSavedJobDTO;
 import com.talentstream.entity.Applicant;
 import com.talentstream.entity.Job;
 import com.talentstream.entity.SavedJob;
+import com.talentstream.exception.CustomException;
 import com.talentstream.repository.ApplyJobRepository;
 import com.talentstream.repository.JobRepository;
 import com.talentstream.repository.RegisterRepository;
 import com.talentstream.repository.SavedJobRepository;
-
-import org.springframework.data.domain.Pageable;
 
 @Service
 public class SavedJobService {
@@ -61,39 +58,19 @@ public class SavedJobService {
         }
     }
 
-    // public List<Job> getSavedJobsForApplicant(long applicantId) {
-    // List<Job> result = new ArrayList<>();
-    //
-    // try {
-    // List<SavedJob> savedJobs = savedJobRepository.findByApplicantId(applicantId);
-    //
-    // for (SavedJob savedJob : savedJobs) {
-    // result.add(savedJob.getJob());
-    // }
-    //
-    // } catch (Exception e) {
-    // e.printStackTrace();
-    // }
-    //
-    // return result;
-    // }
-
-    public Page<Job> getSavedJobsForApplicant(long applicantId, int page, int size) {
+    public Page<GetSavedJobDTO> getSavedJobsForApplicant(long applicantId, int page, int size) {
         Pageable pageable = PageRequest.of(page, size);
-
+ 
         try {
-            // Fetch job IDs for the applicant (with pagination)
             List<Long> savedJobIds = savedJobRepository.findSavedJobIdsByApplicantId(applicantId);
-
+ 
             if (savedJobIds.isEmpty()) {
-                return Page.empty(pageable); // Return an empty page if no job IDs found
+                return Page.empty(pageable);
             }
-
-            // Apply pagination directly in the repository query
-            Page<Job> jobs = jobRepository.findJobsByIds(savedJobIds, pageable);
-
+            Page<GetSavedJobDTO> jobs = jobRepository.findJobsByIds(savedJobIds, pageable);
+ 
             return jobs;
-
+ 
         } catch (Exception e) {
             e.printStackTrace();
             throw new CustomException("Error while retrieving saved jobs for applicant",

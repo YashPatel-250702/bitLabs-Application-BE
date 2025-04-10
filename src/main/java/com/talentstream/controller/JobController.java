@@ -3,8 +3,6 @@ package com.talentstream.controller;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -44,7 +42,6 @@ import com.talentstream.entity.ScreeningQuestion;
 import com.talentstream.exception.CustomException;
 import com.talentstream.service.CompanyLogoService;
 import com.talentstream.service.JobService;
-import com.talentstream.service.NotificationProducer;
 
 @RestController
 @RequestMapping("/job")
@@ -61,8 +58,7 @@ public class JobController {
 	public JobController(JobService jobService) {
 		this.jobService = jobService;
 	}
-    @Autowired
-    private NotificationProducer notificationProducer;
+ 
    
 
 	@PostMapping("/recruiters/saveJob/{jobRecruiterId}")
@@ -91,7 +87,6 @@ public class JobController {
 		}
 		try {
 					ResponseEntity<String> saveJob = jobService.saveJob(jobDTO, jobRecruiterId);
-					 notificationProducer.sendToQueue("1 job posted in bitLabs");
 					 return saveJob;
 		} catch (CustomException ce) {
 			logger.error("CustomException occurred while saving job: {}", ce.getMessage());
@@ -501,8 +496,6 @@ public class JobController {
 				}
 			}
 
-			
-			notificationProducer.sendToQueue(jobcount+" Job posted in bitLabs");
 			return ResponseEntity.status(HttpStatus.OK).body("Jobs successfully posted from the CSV file.");
 
 		} catch (IOException e) {

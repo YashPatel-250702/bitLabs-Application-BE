@@ -1,11 +1,12 @@
 package com.talentstream.controller;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.talentstream.exception.CustomException;
+import org.modelmapper.ModelMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
@@ -18,14 +19,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.talentstream.dto.JobDTO;
-import com.talentstream.entity.Job;
+import com.talentstream.dto.GetSavedJobDTO;
+import com.talentstream.exception.CustomException;
 import com.talentstream.service.CompanyLogoService;
 import com.talentstream.service.SavedJobService;
-
-import org.modelmapper.ModelMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @RestController
 @RequestMapping("/savedjob")
@@ -52,25 +49,22 @@ public class SavedJobController {
     }
 
     @GetMapping("/getSavedJobs/{applicantId}")
-    public ResponseEntity<List<JobDTO>> getSavedJobsForApplicantAndJob(
+    public ResponseEntity<List<GetSavedJobDTO>> getSavedJobsForApplicantAndJob(
             @PathVariable long applicantId,
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size) {
         try {
-            Page<Job> savedJobsPage = savedJobService.getSavedJobsForApplicant(applicantId, page, size);
-
+            Page<GetSavedJobDTO> savedJobsPage = savedJobService.getSavedJobsForApplicant(applicantId, page, size);
+ 
             if (savedJobsPage.isEmpty()) {
                 return ResponseEntity.noContent().build();
             }
-
-            List<JobDTO> savedJobsDTOList = savedJobsPage.stream().map(job -> {
-                JobDTO jobDTO = modelMapper.map(job, JobDTO.class);
-                jobDTO.setCompanyname(job.getJobRecruiter().getCompanyname());
-                jobDTO.setEmail(job.getJobRecruiter().getEmail());
-                jobDTO.setRecruiterId(job.getJobRecruiter().getRecruiterId());
+ 
+            List<GetSavedJobDTO> savedJobsDTOList = savedJobsPage.stream().map(job -> {
+            	GetSavedJobDTO jobDTO = modelMapper.map(job, GetSavedJobDTO.class);               
                 return jobDTO;
-            }).collect(Collectors.toList()); // Convert stream to list
-
+            }).collect(Collectors.toList()); 
+ 
             return ResponseEntity.ok(savedJobsDTOList);
         } catch (CustomException e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Collections.emptyList());

@@ -19,7 +19,6 @@ public class ResponseSizeLogger implements ResponseBodyAdvice<Object> {
 
     private static final Logger logger = LoggerFactory.getLogger(ResponseSizeLogger.class);
 
-    // Register the module that supports Java 8 date/time (LocalDate, LocalDateTime, etc.)
     private final ObjectMapper objectMapper = new ObjectMapper().registerModule(new JavaTimeModule());
 
     @Override
