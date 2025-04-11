@@ -928,3 +928,243 @@ org.hibernate.LazyInitializationException: failed to lazily initialize a collect
 11-04-2025_10:42:42.184{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
 11-04-2025_10:42:42.185{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
 11-04-2025_10:42:42.222{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.
+11-04-2025_15:35:29.075{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+11-04-2025_15:35:29.082{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Starting TalentStreamApplication using Java 21.0.6 on DESKTOP-2JRH28M with PID 103660 (C:\Users\Patel\Music\bitLabs-Application-BE\target\classes started by Patel in C:\Users\Patel\Music\bitLabs-Application-BE)
+11-04-2025_15:35:29.082{UTC}|report-tool|DEBUG||c.t.TalentStreamApplication|Running with Spring Boot v2.7.9, Spring v5.3.25
+11-04-2025_15:35:29.083{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|No active profile set, falling back to 1 default profile: "default"
+11-04-2025_15:35:30.707{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-04-2025_15:35:30.925{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 198 ms. Found 37 JPA repository interfaces.
+11-04-2025_15:35:32.503{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat initialized with port(s): 8081 (http)
+11-04-2025_15:35:32.518{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:35:32.519{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+11-04-2025_15:35:32.520{UTC}|report-tool|INFO ||o.a.c.c.StandardEngine|Starting Servlet engine: [Apache Tomcat/9.0.71]
+11-04-2025_15:35:32.741{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+11-04-2025_15:35:32.741{UTC}|report-tool|INFO ||o.s.b.w.s.c.ServletWebServerApplicationContext|Root WebApplicationContext: initialization completed in 3588 ms
+11-04-2025_15:35:33.378{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+11-04-2025_15:35:34.308{UTC}|report-tool|INFO ||c.z.h.p.HikariPool|HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@26d7cb0d
+11-04-2025_15:35:34.313{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+11-04-2025_15:35:34.453{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+11-04-2025_15:35:34.608{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+11-04-2025_15:35:34.934{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11-04-2025_15:35:35.203{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+11-04-2025_15:35:37.314{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-04-2025_15:35:37.331{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_15:35:38.350{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Filter 'jwtRequestFilter' configured for use
+11-04-2025_15:35:38.487{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-04-2025_15:35:39.669{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+11-04-2025_15:35:39.735{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+11-04-2025_15:35:45.923{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1529406e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bb92a71, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d549bf1, org.springframework.security.web.header.HeaderWriterFilter@4d27716b, org.springframework.security.web.authentication.logout.LogoutFilter@a8eb0bf, com.talentstream.filter.JwtRequestFilter@3787eac3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1386f8bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ba59da9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3bbb5b2, org.springframework.security.web.session.SessionManagementFilter@554bb231, org.springframework.security.web.access.ExceptionTranslationFilter@38aca984, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@254ed9ba]
+11-04-2025_15:35:47.376{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:35:47.422{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat started on port(s): 8081 (http) with context path ''
+11-04-2025_15:35:48.639{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_15:35:48.720{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Created new connection: rabbitConnectionFactory#4c110f87:0/SimpleConnection@47f64e86 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 57554]
+11-04-2025_15:35:48.805{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Started TalentStreamApplication in 20.238 seconds (JVM running for 21.635)
+11-04-2025_15:35:48.951{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-04-2025_15:35:48.951{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Initializing Servlet 'dispatcherServlet'
+11-04-2025_15:35:48.953{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Completed initialization in 2 ms
+11-04-2025_15:35:48.972{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+11-04-2025_15:35:48.973{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+11-04-2025_15:35:48.974{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+11-04-2025_15:35:49.015{UTC}|report-tool|INFO ||c.t.u.ResponseSizeLogger|API [/health] response size: 26 bytes (~0.03 KB)
+11-04-2025_15:37:48.931{UTC}|report-tool|INFO ||o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin|Application shutdown requested.
+11-04-2025_15:37:48.941{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Waiting for workers to finish.
+11-04-2025_15:37:49.430{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Successfully waited for workers to finish.
+11-04-2025_15:37:49.436{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Pausing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:37:49.437{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+11-04-2025_15:37:49.438{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Destroying Spring FrameworkServlet 'dispatcherServlet'
+11-04-2025_15:37:49.443{UTC}|report-tool|WARN ||o.a.c.l.WebappClassLoaderBase|The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+11-04-2025_15:37:49.444{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:37:49.447{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Destroying ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:37:49.451{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Shutdown ignored - container is already stopped
+11-04-2025_15:37:49.485{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_15:37:49.486{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+11-04-2025_15:37:49.559{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.
+11-04-2025_15:37:54.764{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+11-04-2025_15:37:54.777{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Starting TalentStreamApplication using Java 21.0.6 on DESKTOP-2JRH28M with PID 95984 (C:\Users\Patel\Music\bitLabs-Application-BE\target\classes started by Patel in C:\Users\Patel\Music\bitLabs-Application-BE)
+11-04-2025_15:37:54.778{UTC}|report-tool|DEBUG||c.t.TalentStreamApplication|Running with Spring Boot v2.7.9, Spring v5.3.25
+11-04-2025_15:37:54.778{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|No active profile set, falling back to 1 default profile: "default"
+11-04-2025_15:37:56.106{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-04-2025_15:37:56.368{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 249 ms. Found 37 JPA repository interfaces.
+11-04-2025_15:37:57.751{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat initialized with port(s): 8081 (http)
+11-04-2025_15:37:57.763{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:37:57.763{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+11-04-2025_15:37:57.764{UTC}|report-tool|INFO ||o.a.c.c.StandardEngine|Starting Servlet engine: [Apache Tomcat/9.0.71]
+11-04-2025_15:37:57.937{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+11-04-2025_15:37:57.937{UTC}|report-tool|INFO ||o.s.b.w.s.c.ServletWebServerApplicationContext|Root WebApplicationContext: initialization completed in 3074 ms
+11-04-2025_15:37:58.370{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+11-04-2025_15:37:59.272{UTC}|report-tool|INFO ||c.z.h.p.HikariPool|HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@13aa54f1
+11-04-2025_15:37:59.277{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+11-04-2025_15:37:59.349{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+11-04-2025_15:37:59.414{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+11-04-2025_15:37:59.610{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11-04-2025_15:37:59.759{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+11-04-2025_15:38:01.445{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-04-2025_15:38:01.456{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_15:38:02.383{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Filter 'jwtRequestFilter' configured for use
+11-04-2025_15:38:02.481{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-04-2025_15:38:03.676{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+11-04-2025_15:38:03.740{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+11-04-2025_15:38:09.134{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4d27716b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@720a86ef, org.springframework.security.web.context.SecurityContextPersistenceFilter@379445f, org.springframework.security.web.header.HeaderWriterFilter@3614cd03, org.springframework.security.web.authentication.logout.LogoutFilter@4c026825, com.talentstream.filter.JwtRequestFilter@388a6656, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@411d3b5e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@285290a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bfbbef5, org.springframework.security.web.session.SessionManagementFilter@729668d7, org.springframework.security.web.access.ExceptionTranslationFilter@14ea1252, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@571010af]
+11-04-2025_15:38:10.493{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:38:10.519{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat started on port(s): 8081 (http) with context path ''
+11-04-2025_15:38:11.934{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_15:38:11.992{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Created new connection: rabbitConnectionFactory#8add32f:0/SimpleConnection@ebe20fd [delegate=amqp://guest@127.0.0.1:5672/, localPort= 59294]
+11-04-2025_15:38:12.063{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Started TalentStreamApplication in 17.769 seconds (JVM running for 19.061)
+11-04-2025_15:38:12.148{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-04-2025_15:38:12.149{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Initializing Servlet 'dispatcherServlet'
+11-04-2025_15:38:12.151{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Completed initialization in 2 ms
+11-04-2025_15:38:12.170{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+11-04-2025_15:38:12.171{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+11-04-2025_15:38:12.171{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+11-04-2025_15:38:12.214{UTC}|report-tool|INFO ||c.t.u.ResponseSizeLogger|API [/health] response size: 26 bytes (~0.03 KB)
+11-04-2025_15:39:15.759{UTC}|report-tool|INFO ||o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin|Application shutdown requested.
+11-04-2025_15:39:15.768{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Waiting for workers to finish.
+11-04-2025_15:39:16.652{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Successfully waited for workers to finish.
+11-04-2025_15:39:16.656{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Pausing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:39:16.657{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+11-04-2025_15:39:16.659{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Destroying Spring FrameworkServlet 'dispatcherServlet'
+11-04-2025_15:39:16.662{UTC}|report-tool|WARN ||o.a.c.l.WebappClassLoaderBase|The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+11-04-2025_15:39:16.663{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:39:16.666{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Destroying ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:39:16.671{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Shutdown ignored - container is already stopped
+11-04-2025_15:39:16.710{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_15:39:16.712{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+11-04-2025_15:39:16.817{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.
+11-04-2025_15:39:22.816{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+11-04-2025_15:39:22.820{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Starting TalentStreamApplication using Java 21.0.6 on DESKTOP-2JRH28M with PID 102984 (C:\Users\Patel\Music\bitLabs-Application-BE\target\classes started by Patel in C:\Users\Patel\Music\bitLabs-Application-BE)
+11-04-2025_15:39:22.821{UTC}|report-tool|DEBUG||c.t.TalentStreamApplication|Running with Spring Boot v2.7.9, Spring v5.3.25
+11-04-2025_15:39:22.822{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|No active profile set, falling back to 1 default profile: "default"
+11-04-2025_15:39:24.191{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-04-2025_15:39:24.433{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 231 ms. Found 37 JPA repository interfaces.
+11-04-2025_15:39:25.889{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat initialized with port(s): 8081 (http)
+11-04-2025_15:39:25.898{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:39:25.900{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+11-04-2025_15:39:25.900{UTC}|report-tool|INFO ||o.a.c.c.StandardEngine|Starting Servlet engine: [Apache Tomcat/9.0.71]
+11-04-2025_15:39:26.055{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+11-04-2025_15:39:26.055{UTC}|report-tool|INFO ||o.s.b.w.s.c.ServletWebServerApplicationContext|Root WebApplicationContext: initialization completed in 3151 ms
+11-04-2025_15:39:26.491{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+11-04-2025_15:39:28.807{UTC}|report-tool|INFO ||c.z.h.p.HikariPool|HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@26d7cb0d
+11-04-2025_15:39:28.812{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+11-04-2025_15:39:28.889{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+11-04-2025_15:39:28.948{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+11-04-2025_15:39:29.143{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11-04-2025_15:39:29.267{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+11-04-2025_15:39:31.291{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-04-2025_15:39:31.308{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_15:39:32.258{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Filter 'jwtRequestFilter' configured for use
+11-04-2025_15:39:32.376{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-04-2025_15:39:33.578{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+11-04-2025_15:39:33.647{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+11-04-2025_15:39:38.965{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f21ed2d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d0da1d6, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f4d7c0e, org.springframework.security.web.header.HeaderWriterFilter@6fb03f5, org.springframework.security.web.authentication.logout.LogoutFilter@40ee8512, com.talentstream.filter.JwtRequestFilter@3f1485c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@aa24615, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d45ffd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7033c58a, org.springframework.security.web.session.SessionManagementFilter@34ceabf1, org.springframework.security.web.access.ExceptionTranslationFilter@74d41fcf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e9079cf]
+11-04-2025_15:39:40.264{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:39:40.290{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat started on port(s): 8081 (http) with context path ''
+11-04-2025_15:39:41.878{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_15:39:41.930{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Created new connection: rabbitConnectionFactory#76fc11ab:0/SimpleConnection@5a405492 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 60392]
+11-04-2025_15:39:42.000{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Started TalentStreamApplication in 19.647 seconds (JVM running for 20.908)
+11-04-2025_15:39:42.082{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-04-2025_15:39:42.084{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Initializing Servlet 'dispatcherServlet'
+11-04-2025_15:39:42.086{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Completed initialization in 2 ms
+11-04-2025_15:39:42.108{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+11-04-2025_15:39:42.108{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+11-04-2025_15:39:42.109{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+11-04-2025_15:39:42.162{UTC}|report-tool|INFO ||c.t.u.ResponseSizeLogger|API [/health] response size: 26 bytes (~0.03 KB)
+11-04-2025_15:46:16.614{UTC}|report-tool|INFO ||o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin|Application shutdown requested.
+11-04-2025_15:46:16.625{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Waiting for workers to finish.
+11-04-2025_15:46:17.167{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Successfully waited for workers to finish.
+11-04-2025_15:46:17.172{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Pausing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:46:17.172{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+11-04-2025_15:46:17.174{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Destroying Spring FrameworkServlet 'dispatcherServlet'
+11-04-2025_15:46:17.178{UTC}|report-tool|WARN ||o.a.c.l.WebappClassLoaderBase|The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+11-04-2025_15:46:17.180{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:46:17.183{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Destroying ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:46:17.189{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Shutdown ignored - container is already stopped
+11-04-2025_15:46:17.236{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_15:46:17.238{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+11-04-2025_15:46:17.277{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.
+11-04-2025_15:46:22.447{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+11-04-2025_15:46:22.455{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Starting TalentStreamApplication using Java 21.0.6 on DESKTOP-2JRH28M with PID 104220 (C:\Users\Patel\Music\bitLabs-Application-BE\target\classes started by Patel in C:\Users\Patel\Music\bitLabs-Application-BE)
+11-04-2025_15:46:22.456{UTC}|report-tool|DEBUG||c.t.TalentStreamApplication|Running with Spring Boot v2.7.9, Spring v5.3.25
+11-04-2025_15:46:22.456{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|No active profile set, falling back to 1 default profile: "default"
+11-04-2025_15:46:23.882{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-04-2025_15:46:24.067{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 174 ms. Found 37 JPA repository interfaces.
+11-04-2025_15:46:25.343{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat initialized with port(s): 8081 (http)
+11-04-2025_15:46:25.356{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:46:25.357{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+11-04-2025_15:46:25.358{UTC}|report-tool|INFO ||o.a.c.c.StandardEngine|Starting Servlet engine: [Apache Tomcat/9.0.71]
+11-04-2025_15:46:25.531{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+11-04-2025_15:46:25.532{UTC}|report-tool|INFO ||o.s.b.w.s.c.ServletWebServerApplicationContext|Root WebApplicationContext: initialization completed in 2981 ms
+11-04-2025_15:46:26.003{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+11-04-2025_15:46:27.013{UTC}|report-tool|INFO ||c.z.h.p.HikariPool|HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@470c4229
+11-04-2025_15:46:27.018{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+11-04-2025_15:46:27.116{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+11-04-2025_15:46:27.194{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+11-04-2025_15:46:27.399{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11-04-2025_15:46:27.519{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+11-04-2025_15:46:29.392{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-04-2025_15:46:29.404{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_15:46:30.345{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Filter 'jwtRequestFilter' configured for use
+11-04-2025_15:46:30.465{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-04-2025_15:46:31.552{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+11-04-2025_15:46:31.638{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+11-04-2025_15:46:37.100{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@391133ad, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11d59d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b2e1015, org.springframework.security.web.header.HeaderWriterFilter@2c1e4d9e, org.springframework.security.web.authentication.logout.LogoutFilter@6f49a165, com.talentstream.filter.JwtRequestFilter@47fe4c3e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2de1a93d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d05cbae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ba2a958, org.springframework.security.web.session.SessionManagementFilter@2cb34e1e, org.springframework.security.web.access.ExceptionTranslationFilter@6a72d5fb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b152082]
+11-04-2025_15:46:38.386{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:46:38.412{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat started on port(s): 8081 (http) with context path ''
+11-04-2025_15:46:39.665{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_15:46:39.739{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Created new connection: rabbitConnectionFactory#3815c525:0/SimpleConnection@18a997c7 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 49721]
+11-04-2025_15:46:39.830{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Started TalentStreamApplication in 17.934 seconds (JVM running for 19.167)
+11-04-2025_15:46:39.937{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-04-2025_15:46:39.937{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Initializing Servlet 'dispatcherServlet'
+11-04-2025_15:46:39.939{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Completed initialization in 2 ms
+11-04-2025_15:46:39.957{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+11-04-2025_15:46:39.958{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+11-04-2025_15:46:39.958{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+11-04-2025_15:46:39.998{UTC}|report-tool|INFO ||c.t.u.ResponseSizeLogger|API [/health] response size: 26 bytes (~0.03 KB)
+11-04-2025_15:46:42.115{UTC}|report-tool|INFO ||o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin|Application shutdown requested.
+11-04-2025_15:46:42.126{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Waiting for workers to finish.
+11-04-2025_15:46:42.848{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Successfully waited for workers to finish.
+11-04-2025_15:46:42.858{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Pausing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:46:42.859{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+11-04-2025_15:46:42.864{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Destroying Spring FrameworkServlet 'dispatcherServlet'
+11-04-2025_15:46:42.874{UTC}|report-tool|WARN ||o.a.c.l.WebappClassLoaderBase|The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+11-04-2025_15:46:42.877{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:46:42.881{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Destroying ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_15:46:42.884{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Shutdown ignored - container is already stopped
+11-04-2025_15:46:42.920{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_15:46:42.921{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+11-04-2025_15:46:43.261{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.
