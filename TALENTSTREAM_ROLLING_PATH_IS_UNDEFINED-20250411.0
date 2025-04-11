@@ -1,0 +1,930 @@
+11-04-2025_09:44:12.788{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+11-04-2025_09:44:12.794{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Starting TalentStreamApplication using Java 21.0.6 on DESKTOP-2JRH28M with PID 79868 (C:\Users\Patel\Music\bitLabs-Application-BE\target\classes started by Patel in C:\Users\Patel\Music\bitLabs-Application-BE)
+11-04-2025_09:44:12.795{UTC}|report-tool|DEBUG||c.t.TalentStreamApplication|Running with Spring Boot v2.7.9, Spring v5.3.25
+11-04-2025_09:44:12.796{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|No active profile set, falling back to 1 default profile: "default"
+11-04-2025_09:44:14.451{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-04-2025_09:44:14.645{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 186 ms. Found 37 JPA repository interfaces.
+11-04-2025_09:44:15.992{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat initialized with port(s): 8081 (http)
+11-04-2025_09:44:16.009{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_09:44:16.009{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+11-04-2025_09:44:16.010{UTC}|report-tool|INFO ||o.a.c.c.StandardEngine|Starting Servlet engine: [Apache Tomcat/9.0.71]
+11-04-2025_09:44:16.179{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+11-04-2025_09:44:16.180{UTC}|report-tool|INFO ||o.s.b.w.s.c.ServletWebServerApplicationContext|Root WebApplicationContext: initialization completed in 3309 ms
+11-04-2025_09:44:16.552{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+11-04-2025_09:44:17.255{UTC}|report-tool|INFO ||c.z.h.p.HikariPool|HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@470c4229
+11-04-2025_09:44:17.259{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+11-04-2025_09:44:17.323{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+11-04-2025_09:44:17.371{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+11-04-2025_09:44:17.554{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11-04-2025_09:44:17.711{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+11-04-2025_09:44:18.919{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-04-2025_09:44:18.931{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_09:44:19.725{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Filter 'jwtRequestFilter' configured for use
+11-04-2025_09:44:19.818{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-04-2025_09:44:20.723{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+11-04-2025_09:44:20.793{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+11-04-2025_09:44:25.347{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69894182, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@500a6c2f, org.springframework.security.web.context.SecurityContextPersistenceFilter@6fb07db6, org.springframework.security.web.header.HeaderWriterFilter@8179cad, org.springframework.security.web.authentication.logout.LogoutFilter@19601dc5, com.talentstream.filter.JwtRequestFilter@198eeb36, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d549bf1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a2d79bf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67a02460, org.springframework.security.web.session.SessionManagementFilter@5f1bf89a, org.springframework.security.web.access.ExceptionTranslationFilter@598acf89, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3bfb81be]
+11-04-2025_09:44:26.529{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_09:44:26.550{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat started on port(s): 8081 (http) with context path ''
+11-04-2025_09:44:27.590{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:44:27.625{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:44:27.633{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:44:27.656{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:602)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2210)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2163)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:463)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:447)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1939)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1914)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1384)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:640)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:615)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:565)
+	... 12 common frames omitted
+11-04-2025_09:44:27.658{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:44:27.699{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Started TalentStreamApplication in 15.308 seconds (JVM running for 16.411)
+11-04-2025_09:44:27.777{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-04-2025_09:44:27.777{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Initializing Servlet 'dispatcherServlet'
+11-04-2025_09:44:27.779{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Completed initialization in 2 ms
+11-04-2025_09:44:27.794{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+11-04-2025_09:44:27.794{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+11-04-2025_09:44:27.794{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+11-04-2025_09:44:27.835{UTC}|report-tool|INFO ||c.t.u.ResponseSizeLogger|API [/health] response size: 26 bytes (~0.03 KB)
+11-04-2025_09:44:32.710{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:44:32.712{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@4512af0e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:44:32.713{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:44:32.714{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:44:32.714{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:44:37.731{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:44:37.731{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@319911c5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:44:37.732{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:44:37.733{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:44:37.733{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:44:42.753{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:44:42.753{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@82bf5ab: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:44:42.753{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:44:42.755{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:44:42.755{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:44:47.774{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:44:47.774{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@64fe996c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:44:47.775{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:44:47.776{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:44:47.776{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:44:52.803{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:44:52.803{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@701f44a3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:44:52.803{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:44:52.824{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:44:52.824{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:44:57.860{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:44:57.860{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@28cc185f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:44:57.861{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:44:57.873{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:44:57.873{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:02.912{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:45:02.912{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@cebdbdc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:45:02.913{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:02.914{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:45:02.915{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:07.946{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:45:07.946{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@3a307e9b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:45:07.947{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:07.968{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:45:07.968{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:12.999{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:45:12.999{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@3b0e5eba: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:45:13.000{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:13.001{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:45:13.001{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:18.114{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:45:18.114{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@b1110ca: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:45:18.115{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:18.116{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:45:18.116{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:23.200{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:45:23.200{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@46b62d1e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:45:23.201{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:23.202{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:45:23.203{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:28.319{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:45:28.320{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@7a84fede: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:45:28.322{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:28.350{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:45:28.351{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:33.439{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:45:33.441{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@51d10f32: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:45:33.443{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:33.471{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:45:33.471{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:38.568{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:45:38.568{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@5416aad7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:45:38.569{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:38.583{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:45:38.583{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:43.680{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:45:43.680{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@30e8bbf6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:45:43.681{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:43.697{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:45:43.697{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:48.794{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:45:48.794{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@35ce24d1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:45:48.795{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:48.796{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:45:48.796{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:53.903{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:45:53.904{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@b67f02e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:45:53.905{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:53.920{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:45:53.920{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:58.991{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:45:58.992{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@6bc75a09: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:45:58.994{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:45:58.996{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:45:58.997{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:04.100{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:46:04.101{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@71d7b1ed: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:46:04.104{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:04.131{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:46:04.131{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:09.245{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:46:09.245{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@54942f80: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:46:09.247{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:09.276{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:46:09.277{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:14.387{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:46:14.388{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@e697f80: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:46:14.389{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:14.434{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:46:14.434{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:19.548{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:46:19.549{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@2d83f4ff: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:46:19.551{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:19.580{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:46:19.581{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:24.682{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:46:24.683{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@dbd8b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:46:24.685{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:24.713{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:46:24.713{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:29.834{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:46:29.834{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@4c958735: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:46:29.834{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:29.835{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:46:29.835{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:34.924{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:46:34.925{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@3a2ed781: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:46:34.927{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:34.955{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:46:34.955{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:40.068{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:46:40.069{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@31b2c0ab: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:46:40.071{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:40.085{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:46:40.085{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:45.204{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:46:45.204{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@7b155dfe: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:46:45.204{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:45.206{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:46:45.206{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:50.289{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:46:50.290{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@5b71dad1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:46:50.292{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:50.305{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:46:50.305{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:55.404{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:46:55.405{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@4f11bfd8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:46:55.407{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:46:55.435{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:46:55.435{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:00.535{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:47:00.535{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@a1812ae: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:47:00.536{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:00.537{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:47:00.538{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:05.610{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:47:05.611{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@3841992b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:47:05.613{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:05.626{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:47:05.626{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:10.743{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:47:10.744{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@329bd28a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:47:10.746{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:10.758{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:47:10.758{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:15.866{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:47:15.867{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@43c4cece: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:47:15.868{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:15.897{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:47:15.897{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:20.991{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:47:20.992{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@66df61fa: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:47:20.994{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:21.006{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:47:21.006{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:26.110{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:47:26.110{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@1717fd17: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:47:26.110{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:26.111{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:47:26.111{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:31.182{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:47:31.182{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@61aceb4d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:47:31.183{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:31.198{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:47:31.198{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:36.309{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:47:36.310{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@59d9ea8d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:47:36.311{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:36.314{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:47:36.315{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:41.401{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:47:41.402{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@721af27f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:47:41.404{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:41.432{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:47:41.433{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:46.558{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:47:46.558{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@4c1b0b07: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:47:46.559{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:46.574{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:47:46.574{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:51.678{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:47:51.678{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@41f4b26b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:47:51.681{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:51.694{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:47:51.694{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:56.809{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:47:56.810{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@4ee2ec66: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:47:56.811{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:47:56.824{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:47:56.824{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:01.962{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:48:01.963{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@519d83a1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:48:01.964{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:01.993{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:48:01.994{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:07.076{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:48:07.076{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@43ace10f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:48:07.077{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:07.108{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:48:07.108{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:12.231{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:48:12.233{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@4eaa7ada: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:48:12.234{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:12.248{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:48:12.249{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:17.344{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:48:17.344{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@5fd8874b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:48:17.344{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:17.360{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:48:17.360{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:22.474{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:48:22.474{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@4ad5e5bb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:48:22.475{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:22.505{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:48:22.505{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:27.624{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:48:27.624{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@7c3af941: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:48:27.624{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:27.640{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:48:27.640{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:32.763{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:48:32.764{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@12961e8d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:48:32.766{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:32.779{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:48:32.779{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:37.930{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:48:37.930{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@580b1b49: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:48:37.930{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:37.946{UTC}|report-tool|ERROR||o.s.a.r.l.SimpleMessageListenerContainer|Failed to check/redeclare auto-delete queue(s).
+11-04-2025_09:48:37.946{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:43.041{UTC}|report-tool|WARN ||o.s.a.r.l.SimpleMessageListenerContainer|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+11-04-2025_09:48:43.041{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Restarting Consumer@2f6d12db: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+11-04-2025_09:48:43.043{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_09:48:43.129{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Created new connection: rabbitConnectionFactory#5066442d:101/SimpleConnection@52305fed [delegate=amqp://guest@127.0.0.1:5672/, localPort= 49531]
+11-04-2025_10:00:00.151{UTC}|report-tool|WARN ||c.z.h.p.PoolBase|HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@470c4229 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+11-04-2025_10:16:34.694{UTC}|report-tool|INFO ||o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin|Application shutdown requested.
+11-04-2025_10:16:34.701{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Waiting for workers to finish.
+11-04-2025_10:16:35.517{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Successfully waited for workers to finish.
+11-04-2025_10:16:35.530{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Pausing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:16:35.530{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+11-04-2025_10:16:35.531{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Destroying Spring FrameworkServlet 'dispatcherServlet'
+11-04-2025_10:16:35.533{UTC}|report-tool|WARN ||o.a.c.l.WebappClassLoaderBase|The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+11-04-2025_10:16:35.534{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:16:35.536{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Destroying ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:16:35.538{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Shutdown ignored - container is already stopped
+11-04-2025_10:16:35.577{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_10:16:35.579{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+11-04-2025_10:16:35.583{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.
+11-04-2025_10:16:39.252{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+11-04-2025_10:16:39.260{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Starting TalentStreamApplication using Java 21.0.6 on DESKTOP-2JRH28M with PID 1244 (C:\Users\Patel\Music\bitLabs-Application-BE\target\classes started by Patel in C:\Users\Patel\Music\bitLabs-Application-BE)
+11-04-2025_10:16:39.261{UTC}|report-tool|DEBUG||c.t.TalentStreamApplication|Running with Spring Boot v2.7.9, Spring v5.3.25
+11-04-2025_10:16:39.262{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|No active profile set, falling back to 1 default profile: "default"
+11-04-2025_10:16:40.513{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-04-2025_10:16:40.678{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 153 ms. Found 37 JPA repository interfaces.
+11-04-2025_10:16:41.977{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat initialized with port(s): 8081 (http)
+11-04-2025_10:16:41.990{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:16:41.991{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+11-04-2025_10:16:41.992{UTC}|report-tool|INFO ||o.a.c.c.StandardEngine|Starting Servlet engine: [Apache Tomcat/9.0.71]
+11-04-2025_10:16:42.223{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+11-04-2025_10:16:42.224{UTC}|report-tool|INFO ||o.s.b.w.s.c.ServletWebServerApplicationContext|Root WebApplicationContext: initialization completed in 2901 ms
+11-04-2025_10:16:42.847{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+11-04-2025_10:16:43.994{UTC}|report-tool|INFO ||c.z.h.p.HikariPool|HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e57b783
+11-04-2025_10:16:43.999{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+11-04-2025_10:16:44.101{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+11-04-2025_10:16:44.181{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+11-04-2025_10:16:44.379{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11-04-2025_10:16:44.504{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+11-04-2025_10:16:46.037{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-04-2025_10:16:46.075{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_10:16:46.924{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Filter 'jwtRequestFilter' configured for use
+11-04-2025_10:16:47.015{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-04-2025_10:16:47.967{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+11-04-2025_10:16:48.023{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+11-04-2025_10:16:52.634{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2280c0f5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@543eacd5, org.springframework.security.web.context.SecurityContextPersistenceFilter@6655bdce, org.springframework.security.web.header.HeaderWriterFilter@29f7c73e, org.springframework.security.web.authentication.logout.LogoutFilter@18a6451f, com.talentstream.filter.JwtRequestFilter@6e92f150, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24b4cee9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18b0bbc3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@435a2e1f, org.springframework.security.web.session.SessionManagementFilter@554d4856, org.springframework.security.web.access.ExceptionTranslationFilter@7cb77d5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7eb91b95]
+11-04-2025_10:16:54.004{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:16:54.029{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat started on port(s): 8081 (http) with context path ''
+11-04-2025_10:16:54.909{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_10:16:54.959{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Created new connection: rabbitConnectionFactory#6ddf4303:0/SimpleConnection@70ce4b5d [delegate=amqp://guest@127.0.0.1:5672/, localPort= 53796]
+11-04-2025_10:16:55.016{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Started TalentStreamApplication in 16.17 seconds (JVM running for 17.161)
+11-04-2025_10:16:55.087{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-04-2025_10:16:55.087{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Initializing Servlet 'dispatcherServlet'
+11-04-2025_10:16:55.089{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Completed initialization in 2 ms
+11-04-2025_10:16:55.103{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+11-04-2025_10:16:55.103{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+11-04-2025_10:16:55.103{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+11-04-2025_10:16:55.136{UTC}|report-tool|INFO ||c.t.u.ResponseSizeLogger|API [/health] response size: 26 bytes (~0.03 KB)
+11-04-2025_10:17:42.644{UTC}|report-tool|INFO ||o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin|Application shutdown requested.
+11-04-2025_10:17:42.651{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Waiting for workers to finish.
+11-04-2025_10:17:42.839{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Successfully waited for workers to finish.
+11-04-2025_10:17:42.849{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Pausing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:17:42.850{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+11-04-2025_10:17:42.854{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Destroying Spring FrameworkServlet 'dispatcherServlet'
+11-04-2025_10:17:42.860{UTC}|report-tool|WARN ||o.a.c.l.WebappClassLoaderBase|The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+11-04-2025_10:17:42.862{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:17:42.866{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Destroying ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:17:42.871{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Shutdown ignored - container is already stopped
+11-04-2025_10:17:42.902{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_10:17:42.903{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+11-04-2025_10:17:43.295{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.
+11-04-2025_10:33:07.977{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+11-04-2025_10:33:07.982{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Starting TalentStreamApplication using Java 21.0.6 on DESKTOP-2JRH28M with PID 7852 (C:\Users\Patel\Music\bitLabs-Application-BE\target\classes started by Patel in C:\Users\Patel\Music\bitLabs-Application-BE)
+11-04-2025_10:33:07.982{UTC}|report-tool|DEBUG||c.t.TalentStreamApplication|Running with Spring Boot v2.7.9, Spring v5.3.25
+11-04-2025_10:33:07.983{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|No active profile set, falling back to 1 default profile: "default"
+11-04-2025_10:33:09.024{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-04-2025_10:33:09.166{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 134 ms. Found 37 JPA repository interfaces.
+11-04-2025_10:33:10.214{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat initialized with port(s): 8081 (http)
+11-04-2025_10:33:10.223{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:33:10.224{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+11-04-2025_10:33:10.224{UTC}|report-tool|INFO ||o.a.c.c.StandardEngine|Starting Servlet engine: [Apache Tomcat/9.0.71]
+11-04-2025_10:33:10.372{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+11-04-2025_10:33:10.372{UTC}|report-tool|INFO ||o.s.b.w.s.c.ServletWebServerApplicationContext|Root WebApplicationContext: initialization completed in 2331 ms
+11-04-2025_10:33:10.703{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+11-04-2025_10:33:11.571{UTC}|report-tool|INFO ||c.z.h.p.HikariPool|HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@470c4229
+11-04-2025_10:33:11.575{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+11-04-2025_10:33:11.630{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+11-04-2025_10:33:11.677{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+11-04-2025_10:33:11.842{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11-04-2025_10:33:11.957{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+11-04-2025_10:33:13.187{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-04-2025_10:33:13.200{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_10:33:13.972{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Filter 'jwtRequestFilter' configured for use
+11-04-2025_10:33:14.048{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-04-2025_10:33:14.913{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+11-04-2025_10:33:14.970{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+11-04-2025_10:33:18.991{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34b4f6c3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d45ffd, org.springframework.security.web.context.SecurityContextPersistenceFilter@516c8f5a, org.springframework.security.web.header.HeaderWriterFilter@1c89afe, org.springframework.security.web.authentication.logout.LogoutFilter@3d8c55ff, com.talentstream.filter.JwtRequestFilter@3f6f26cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6719b4a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e5361df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f59f157, org.springframework.security.web.session.SessionManagementFilter@30bb4248, org.springframework.security.web.access.ExceptionTranslationFilter@57ecd447, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f2fd933]
+11-04-2025_10:33:20.047{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:33:20.067{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat started on port(s): 8081 (http) with context path ''
+11-04-2025_10:33:20.941{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_10:33:20.986{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Created new connection: rabbitConnectionFactory#4920430f:0/SimpleConnection@30822879 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54802]
+11-04-2025_10:33:21.042{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Started TalentStreamApplication in 13.431 seconds (JVM running for 14.299)
+11-04-2025_10:33:21.128{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-04-2025_10:33:21.129{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Initializing Servlet 'dispatcherServlet'
+11-04-2025_10:33:21.131{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Completed initialization in 2 ms
+11-04-2025_10:33:21.144{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+11-04-2025_10:33:21.144{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+11-04-2025_10:33:21.144{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+11-04-2025_10:33:21.177{UTC}|report-tool|INFO ||c.t.u.ResponseSizeLogger|API [/health] response size: 26 bytes (~0.03 KB)
+11-04-2025_10:34:00.495{UTC}|report-tool|ERROR||o.s.a.i.SimpleAsyncUncaughtExceptionHandler|Unexpected exception occurred invoking async method: public void com.talentstream.service.EventService.sendDateToQueue()
+org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.Object[]] to type [@org.springframework.data.jpa.repository.Query com.talentstream.entity.Applicant] for value '{90, basha123@gmail.com}'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.Long] to type [@org.springframework.data.jpa.repository.Query com.talentstream.entity.Applicant]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192)
+	at org.springframework.core.convert.support.CollectionToCollectionConverter.convert(CollectionToCollectionConverter.java:89)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:213)
+	at org.springframework.data.repository.core.support.QueryExecutionResultHandler.postProcessInvocationResult(QueryExecutionResultHandler.java:167)
+	at org.springframework.data.repository.core.support.QueryExecutionResultHandler.postProcessInvocationResult(QueryExecutionResultHandler.java:77)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy188.findAllApplicantIdAndEmails(Unknown Source)
+	at com.talentstream.service.EventService.sendDateToQueue(EventService.java:58)
+	at com.talentstream.service.EventService$$FastClassBySpringCGLIB$$c00e6989.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.talentstream.aop.AspectAop.logAroundMethod(AspectAop.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.Long] to type [@org.springframework.data.jpa.repository.Query com.talentstream.entity.Applicant]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:322)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:195)
+	at org.springframework.core.convert.support.ArrayToObjectConverter.convert(ArrayToObjectConverter.java:68)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)
+	... 55 common frames omitted
+11-04-2025_10:35:00.289{UTC}|report-tool|ERROR||o.s.a.i.SimpleAsyncUncaughtExceptionHandler|Unexpected exception occurred invoking async method: public void com.talentstream.service.EventService.sendDateToQueue()
+org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.Object[]] to type [@org.springframework.data.jpa.repository.Query com.talentstream.entity.Applicant] for value '{90, basha123@gmail.com}'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.Long] to type [@org.springframework.data.jpa.repository.Query com.talentstream.entity.Applicant]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192)
+	at org.springframework.core.convert.support.CollectionToCollectionConverter.convert(CollectionToCollectionConverter.java:89)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:213)
+	at org.springframework.data.repository.core.support.QueryExecutionResultHandler.postProcessInvocationResult(QueryExecutionResultHandler.java:167)
+	at org.springframework.data.repository.core.support.QueryExecutionResultHandler.postProcessInvocationResult(QueryExecutionResultHandler.java:77)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy188.findAllApplicantIdAndEmails(Unknown Source)
+	at com.talentstream.service.EventService.sendDateToQueue(EventService.java:58)
+	at com.talentstream.service.EventService$$FastClassBySpringCGLIB$$c00e6989.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.talentstream.aop.AspectAop.logAroundMethod(AspectAop.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.Long] to type [@org.springframework.data.jpa.repository.Query com.talentstream.entity.Applicant]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:322)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:195)
+	at org.springframework.core.convert.support.ArrayToObjectConverter.convert(ArrayToObjectConverter.java:68)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)
+	... 55 common frames omitted
+11-04-2025_10:36:00.231{UTC}|report-tool|ERROR||o.s.a.i.SimpleAsyncUncaughtExceptionHandler|Unexpected exception occurred invoking async method: public void com.talentstream.service.EventService.sendDateToQueue()
+org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.Object[]] to type [@org.springframework.data.jpa.repository.Query com.talentstream.entity.Applicant] for value '{90, basha123@gmail.com}'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.Long] to type [@org.springframework.data.jpa.repository.Query com.talentstream.entity.Applicant]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192)
+	at org.springframework.core.convert.support.CollectionToCollectionConverter.convert(CollectionToCollectionConverter.java:89)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:213)
+	at org.springframework.data.repository.core.support.QueryExecutionResultHandler.postProcessInvocationResult(QueryExecutionResultHandler.java:167)
+	at org.springframework.data.repository.core.support.QueryExecutionResultHandler.postProcessInvocationResult(QueryExecutionResultHandler.java:77)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy188.findAllApplicantIdAndEmails(Unknown Source)
+	at com.talentstream.service.EventService.sendDateToQueue(EventService.java:58)
+	at com.talentstream.service.EventService$$FastClassBySpringCGLIB$$c00e6989.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.talentstream.aop.AspectAop.logAroundMethod(AspectAop.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.Long] to type [@org.springframework.data.jpa.repository.Query com.talentstream.entity.Applicant]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:322)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:195)
+	at org.springframework.core.convert.support.ArrayToObjectConverter.convert(ArrayToObjectConverter.java:68)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)
+	... 55 common frames omitted
+11-04-2025_10:37:00.207{UTC}|report-tool|ERROR||o.s.a.i.SimpleAsyncUncaughtExceptionHandler|Unexpected exception occurred invoking async method: public void com.talentstream.service.EventService.sendDateToQueue()
+org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.Object[]] to type [@org.springframework.data.jpa.repository.Query com.talentstream.entity.Applicant] for value '{90, basha123@gmail.com}'; nested exception is org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.Long] to type [@org.springframework.data.jpa.repository.Query com.talentstream.entity.Applicant]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192)
+	at org.springframework.core.convert.support.CollectionToCollectionConverter.convert(CollectionToCollectionConverter.java:89)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:192)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:213)
+	at org.springframework.data.repository.core.support.QueryExecutionResultHandler.postProcessInvocationResult(QueryExecutionResultHandler.java:167)
+	at org.springframework.data.repository.core.support.QueryExecutionResultHandler.postProcessInvocationResult(QueryExecutionResultHandler.java:77)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy188.findAllApplicantIdAndEmails(Unknown Source)
+	at com.talentstream.service.EventService.sendDateToQueue(EventService.java:58)
+	at com.talentstream.service.EventService$$FastClassBySpringCGLIB$$c00e6989.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.talentstream.aop.AspectAop.logAroundMethod(AspectAop.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.Long] to type [@org.springframework.data.jpa.repository.Query com.talentstream.entity.Applicant]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:322)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:195)
+	at org.springframework.core.convert.support.ArrayToObjectConverter.convert(ArrayToObjectConverter.java:68)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)
+	... 55 common frames omitted
+11-04-2025_10:37:29.379{UTC}|report-tool|INFO ||o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin|Application shutdown requested.
+11-04-2025_10:37:29.385{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Waiting for workers to finish.
+11-04-2025_10:37:29.775{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Successfully waited for workers to finish.
+11-04-2025_10:37:29.779{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Pausing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:37:29.781{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+11-04-2025_10:37:29.782{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Destroying Spring FrameworkServlet 'dispatcherServlet'
+11-04-2025_10:37:29.784{UTC}|report-tool|WARN ||o.a.c.l.WebappClassLoaderBase|The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+11-04-2025_10:37:29.784{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:37:29.786{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Destroying ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:37:29.788{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Shutdown ignored - container is already stopped
+11-04-2025_10:37:29.813{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_10:37:29.815{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+11-04-2025_10:37:29.850{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.
+11-04-2025_10:37:33.104{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+11-04-2025_10:37:33.109{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Starting TalentStreamApplication using Java 21.0.6 on DESKTOP-2JRH28M with PID 21196 (C:\Users\Patel\Music\bitLabs-Application-BE\target\classes started by Patel in C:\Users\Patel\Music\bitLabs-Application-BE)
+11-04-2025_10:37:33.109{UTC}|report-tool|DEBUG||c.t.TalentStreamApplication|Running with Spring Boot v2.7.9, Spring v5.3.25
+11-04-2025_10:37:33.110{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|No active profile set, falling back to 1 default profile: "default"
+11-04-2025_10:37:34.223{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-04-2025_10:37:34.374{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 141 ms. Found 37 JPA repository interfaces.
+11-04-2025_10:37:35.395{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat initialized with port(s): 8081 (http)
+11-04-2025_10:37:35.402{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:37:35.403{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+11-04-2025_10:37:35.403{UTC}|report-tool|INFO ||o.a.c.c.StandardEngine|Starting Servlet engine: [Apache Tomcat/9.0.71]
+11-04-2025_10:37:35.543{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+11-04-2025_10:37:35.543{UTC}|report-tool|INFO ||o.s.b.w.s.c.ServletWebServerApplicationContext|Root WebApplicationContext: initialization completed in 2376 ms
+11-04-2025_10:37:35.873{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+11-04-2025_10:37:36.555{UTC}|report-tool|INFO ||c.z.h.p.HikariPool|HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7e691624
+11-04-2025_10:37:36.558{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+11-04-2025_10:37:36.618{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+11-04-2025_10:37:36.664{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+11-04-2025_10:37:36.823{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11-04-2025_10:37:36.926{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+11-04-2025_10:37:38.142{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-04-2025_10:37:38.151{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_10:37:38.888{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Filter 'jwtRequestFilter' configured for use
+11-04-2025_10:37:38.969{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-04-2025_10:37:39.752{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+11-04-2025_10:37:39.820{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+11-04-2025_10:37:43.921{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@52b11deb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@104ce963, org.springframework.security.web.context.SecurityContextPersistenceFilter@1597ed32, org.springframework.security.web.header.HeaderWriterFilter@2f21994d, org.springframework.security.web.authentication.logout.LogoutFilter@4cd0b8cf, com.talentstream.filter.JwtRequestFilter@190ec769, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c028ae2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1053b20d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e5e36ab, org.springframework.security.web.session.SessionManagementFilter@6337c48d, org.springframework.security.web.access.ExceptionTranslationFilter@16594479, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46c9a298]
+11-04-2025_10:37:44.957{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:37:44.977{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat started on port(s): 8081 (http) with context path ''
+11-04-2025_10:37:45.857{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_10:37:45.948{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Created new connection: rabbitConnectionFactory#7f930614:0/SimpleConnection@2295bced [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55036]
+11-04-2025_10:37:46.017{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Started TalentStreamApplication in 13.275 seconds (JVM running for 14.123)
+11-04-2025_10:37:46.103{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-04-2025_10:37:46.103{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Initializing Servlet 'dispatcherServlet'
+11-04-2025_10:37:46.106{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Completed initialization in 3 ms
+11-04-2025_10:37:46.126{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+11-04-2025_10:37:46.126{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+11-04-2025_10:37:46.126{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+11-04-2025_10:37:46.163{UTC}|report-tool|INFO ||c.t.u.ResponseSizeLogger|API [/health] response size: 26 bytes (~0.03 KB)
+11-04-2025_10:38:00.857{UTC}|report-tool|ERROR||o.s.a.i.SimpleAsyncUncaughtExceptionHandler|Unexpected exception occurred invoking async method: public void com.talentstream.service.EventService.sendDateToQueue()
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.talentstream.entity.ApplicantProfile.skillsRequired, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149)
+	at org.hibernate.collection.internal.PersistentSet.iterator(PersistentSet.java:188)
+	at java.base/java.util.Spliterators$IteratorSpliterator.estimateSize(Spliterators.java:1959)
+	at java.base/java.util.Spliterator.getExactSizeIfKnown(Spliterator.java:414)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:508)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at com.talentstream.service.EventService.sendDateToQueue(EventService.java:73)
+	at com.talentstream.service.EventService$$FastClassBySpringCGLIB$$c00e6989.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.talentstream.aop.AspectAop.logAroundMethod(AspectAop.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+11-04-2025_10:39:00.740{UTC}|report-tool|ERROR||o.s.a.i.SimpleAsyncUncaughtExceptionHandler|Unexpected exception occurred invoking async method: public void com.talentstream.service.EventService.sendDateToQueue()
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.talentstream.entity.ApplicantProfile.skillsRequired, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149)
+	at org.hibernate.collection.internal.PersistentSet.iterator(PersistentSet.java:188)
+	at java.base/java.util.Spliterators$IteratorSpliterator.estimateSize(Spliterators.java:1959)
+	at java.base/java.util.Spliterator.getExactSizeIfKnown(Spliterator.java:414)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:508)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at com.talentstream.service.EventService.sendDateToQueue(EventService.java:73)
+	at com.talentstream.service.EventService$$FastClassBySpringCGLIB$$c00e6989.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.talentstream.aop.AspectAop.logAroundMethod(AspectAop.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+11-04-2025_10:39:01.070{UTC}|report-tool|INFO ||o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin|Application shutdown requested.
+11-04-2025_10:39:01.086{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Waiting for workers to finish.
+11-04-2025_10:39:01.654{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Successfully waited for workers to finish.
+11-04-2025_10:39:01.680{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Pausing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:39:01.681{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+11-04-2025_10:39:01.682{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Destroying Spring FrameworkServlet 'dispatcherServlet'
+11-04-2025_10:39:01.685{UTC}|report-tool|WARN ||o.a.c.l.WebappClassLoaderBase|The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+11-04-2025_10:39:01.686{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:39:01.688{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Destroying ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:39:01.691{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Shutdown ignored - container is already stopped
+11-04-2025_10:39:01.717{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_10:39:01.718{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+11-04-2025_10:39:01.752{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.
+11-04-2025_10:39:04.865{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+11-04-2025_10:39:04.869{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Starting TalentStreamApplication using Java 21.0.6 on DESKTOP-2JRH28M with PID 2356 (C:\Users\Patel\Music\bitLabs-Application-BE\target\classes started by Patel in C:\Users\Patel\Music\bitLabs-Application-BE)
+11-04-2025_10:39:04.870{UTC}|report-tool|DEBUG||c.t.TalentStreamApplication|Running with Spring Boot v2.7.9, Spring v5.3.25
+11-04-2025_10:39:04.871{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|No active profile set, falling back to 1 default profile: "default"
+11-04-2025_10:39:05.943{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-04-2025_10:39:06.092{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 141 ms. Found 37 JPA repository interfaces.
+11-04-2025_10:39:07.144{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat initialized with port(s): 8081 (http)
+11-04-2025_10:39:07.152{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:39:07.152{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+11-04-2025_10:39:07.152{UTC}|report-tool|INFO ||o.a.c.c.StandardEngine|Starting Servlet engine: [Apache Tomcat/9.0.71]
+11-04-2025_10:39:07.299{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+11-04-2025_10:39:07.300{UTC}|report-tool|INFO ||o.s.b.w.s.c.ServletWebServerApplicationContext|Root WebApplicationContext: initialization completed in 2364 ms
+11-04-2025_10:39:07.685{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+11-04-2025_10:39:08.355{UTC}|report-tool|INFO ||c.z.h.p.HikariPool|HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@470c4229
+11-04-2025_10:39:08.358{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+11-04-2025_10:39:08.422{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+11-04-2025_10:39:08.492{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+11-04-2025_10:39:08.720{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11-04-2025_10:39:08.838{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+11-04-2025_10:39:10.157{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-04-2025_10:39:10.170{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_10:39:11.001{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Filter 'jwtRequestFilter' configured for use
+11-04-2025_10:39:11.078{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-04-2025_10:39:12.070{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+11-04-2025_10:39:12.121{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+11-04-2025_10:39:16.312{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@639f7054, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26f6fbbd, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d97c12c, org.springframework.security.web.header.HeaderWriterFilter@59c9df97, org.springframework.security.web.authentication.logout.LogoutFilter@712a6e68, com.talentstream.filter.JwtRequestFilter@1f9ec3e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fc52b51, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@579351d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59d2e20f, org.springframework.security.web.session.SessionManagementFilter@1f17fe4c, org.springframework.security.web.access.ExceptionTranslationFilter@3d8c55ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53a41fbe]
+11-04-2025_10:39:17.331{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:39:17.352{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat started on port(s): 8081 (http) with context path ''
+11-04-2025_10:39:18.256{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Attempting to connect to: [localhost:5672]
+11-04-2025_10:39:18.302{UTC}|report-tool|INFO ||o.s.a.r.c.CachingConnectionFactory|Created new connection: rabbitConnectionFactory#5df785d1:0/SimpleConnection@14eaec27 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 52475]
+11-04-2025_10:39:18.361{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Started TalentStreamApplication in 13.861 seconds (JVM running for 14.743)
+11-04-2025_10:39:18.424{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-04-2025_10:39:18.424{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Initializing Servlet 'dispatcherServlet'
+11-04-2025_10:39:18.426{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Completed initialization in 2 ms
+11-04-2025_10:39:18.439{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+11-04-2025_10:39:18.439{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+11-04-2025_10:39:18.440{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+11-04-2025_10:39:18.475{UTC}|report-tool|INFO ||c.t.u.ResponseSizeLogger|API [/health] response size: 26 bytes (~0.03 KB)
+11-04-2025_10:42:41.441{UTC}|report-tool|INFO ||o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin|Application shutdown requested.
+11-04-2025_10:42:41.446{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Waiting for workers to finish.
+11-04-2025_10:42:42.136{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Successfully waited for workers to finish.
+11-04-2025_10:42:42.140{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Pausing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:42:42.141{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+11-04-2025_10:42:42.143{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Destroying Spring FrameworkServlet 'dispatcherServlet'
+11-04-2025_10:42:42.146{UTC}|report-tool|WARN ||o.a.c.l.WebappClassLoaderBase|The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+11-04-2025_10:42:42.147{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:42:42.151{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Destroying ProtocolHandler ["http-nio-0.0.0.0-8081"]
+11-04-2025_10:42:42.154{UTC}|report-tool|INFO ||o.s.a.r.l.SimpleMessageListenerContainer|Shutdown ignored - container is already stopped
+11-04-2025_10:42:42.184{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+11-04-2025_10:42:42.185{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+11-04-2025_10:42:42.222{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.

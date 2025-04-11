@@ -1,7 +1,8 @@
 package com.talentstream.service;
 
 import java.time.LocalDate;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -13,79 +14,102 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import com.talentstream.config.RabbitMQConfig;
+import com.talentstream.dto.ApplicantNotificationDTO;
+import com.talentstream.entity.ApplicantProfile;
 import com.talentstream.entity.Job;
+import com.talentstream.repository.ApplicantProfileRepository;
 import com.talentstream.repository.ApplicantRepository;
 import com.talentstream.repository.JobRepository;
 
 @Service
 public class EventService {
 
-    @Autowired
-    private JavaMailSender mailSender;
+	@Autowired
+	private JavaMailSender mailSender;
 
-    @Autowired
-    private RabbitTemplate rabbitTemplate;
+	@Autowired
+	private RabbitTemplate rabbitTemplate;
 
-    @Autowired
-    private ApplicantRepository applicantRepository;
+	@Autowired
+	private ApplicantRepository applicantRepository;
 
-    @Autowired
-    private JobRepository jobRepository;
+	@Autowired
+	private JobRepository jobRepository;
 
-    @Scheduled(cron = "0 0 10 * * ?")
-    @Async
-    public void sendDateToQueue() {
-        LocalDate yesterday = LocalDate.now().minusDays(1); 
-        rabbitTemplate.convertAndSend(RabbitMQConfig.EXCHANGE, RabbitMQConfig.ROUTING_KEY, yesterday.toString());
-    }
+	@Autowired
+	private ApplicantProfileRepository applicantProfileRepository;
 
-    @Async
-    @RabbitListener(queues = "notification.email.queue")
-    public void sendNotification(String date) {
-        LocalDate postedDate = LocalDate.parse(date);
-        List<Job> jobsByDate = jobRepository.findByCreationDate(postedDate);
+	@Scheduled(cron = "0 0 10 * * ?")
+	@Async
+	public void sendDateToQueue() {
+		
+		LocalDate yesterday = LocalDate.now().minusDays(1);
+		List<Job> jobsByDate = jobRepository.findByCreationDate(yesterday);
+		
+		if (jobsByDate.isEmpty()) {
+			System.out.println("No Job Posted Yesterday");
+			return;
+		}
 
-        if (jobsByDate.isEmpty()) {
-            System.out.println("No jobs posted on " + postedDate);
-            return;
-        }
+		List<ApplicantNotificationDTO> applicants = applicantRepository.findAllApplicantIdAndEmails();
+		if (applicants.isEmpty()) {
+			System.out.println("No Applicant present");
+			return;
+		}
 
-        List<String> applicantEmails = applicantRepository.findAllEmails();
+		for (ApplicantNotificationDTO applicant : applicants) {
+			
+			ApplicantProfile profile = applicantProfileRepository.findByApplicantId(applicant.getId());
+			
+			if (profile == null) continue;
 
-        if (applicantEmails.isEmpty()) {
-            System.out.println("No applicant emails found.");
-            return;
-        }
+			Set<String> applicantSkills = profile.getSkillsRequired().stream()
+				.map(skill -> skill.getSkillName().toLowerCase())
+				.collect(Collectors.toSet());
 
-        StringBuilder contentBuilder = new StringBuilder("Hey there!\n\n");
-        contentBuilder.append("Exciting job opportunities just landed on bitLabs (").append(postedDate).append("):\n\n");
+			List<Job> matchingJobs = jobsByDate.stream().filter(job -> {
+				Set<String> jobSkills = job.getSkillsRequired().stream()
+					.map(skill -> skill.getSkillName().toLowerCase())
+					.collect(Collectors.toSet());
+				
+				jobSkills.retainAll(applicantSkills);
+				return !jobSkills.isEmpty();
+				
+			}).collect(Collectors.toList());
 
-        int jobNo = 1;
-        for (Job job : jobsByDate) {
-            contentBuilder
-                .append(jobNo++).append(". ")
-                .append(job.getJobTitle()).append(" at ")
-                .append(job.getJobRecruiter().getCompanyname())
-                .append(job.getJobURL())
-                .append("\n");
-        }
+			if (matchingJobs.isEmpty()) continue;
 
-        contentBuilder.append("\nApply now: https://jobs.bitlabs.in/applicant-find-jobs\n\n")
-                      .append("Your next career move could be just a click away!");
+			StringBuilder content = new StringBuilder("Hey there!\n\n")
+				.append("Exciting job opportunities matching your skills posted on ")
+				.append(yesterday).append(":\n\n");
 
-        
-        for (String email : applicantEmails) {
-            SimpleMailMessage message = new SimpleMailMessage();
-            message.setFrom("patelyash250702@gmail.com");
-            message.setTo(email);
-            message.setSubject("bitLabs Job Posting");
-            message.setText(contentBuilder.toString());
+			int jobNo = 1;
+			for (Job job : matchingJobs) {
+				content.append(jobNo++).append(". ").append(job.getJobTitle())
+					.append(" at ").append(job.getJobRecruiter().getCompanyname())
+					.append(" - ").append(job.getJobURL()).append("\n");
+			}
 
-            mailSender.send(message);
+			content.append("\nApply now: https://jobs.bitlabs.in/applicant-find-jobs\n\n")
+				.append("Your next career move could be just a click away!");
 
-            System.out.println("Notification sent successfully to: " + email);
-        }
+			Map<String, String> message = new HashMap<>();
+			message.put("to", applicant.getEmail());
+			message.put("content", content.toString());
 
-        System.out.println("Emails sent to " + applicantEmails.size() + " applicants.");
-    }
+			rabbitTemplate.convertAndSend(RabbitMQConfig.EXCHANGE, RabbitMQConfig.ROUTING_KEY, message);
+		}
+	}
+
+	@Async
+	@RabbitListener(queues = "notification.email.queue")
+	public void sendNotification(Map<String, String> notificationInfo) {
+		SimpleMailMessage message = new SimpleMailMessage();
+		message.setFrom("patelyash250702@gmail.com");
+		message.setTo(notificationInfo.get("to"));
+		message.setSubject("bitLabs Job Posting");
+		message.setText(notificationInfo.get("content"));
+		mailSender.send(message);
+		System.out.println("Notification Sent Successfully To : "+notificationInfo.get("to"));
+	}
 }

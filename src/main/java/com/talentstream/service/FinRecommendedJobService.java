@@ -144,6 +144,7 @@ public class FinRecommendedJobService {
                 .collect(Collectors.toSet());
 
         Set<String> preferredLocations = applicantProfile.getPreferredJobLocations();
+       
         Integer experience = null;
         try {
             experience = Integer.parseInt(applicantProfile.getExperience());
