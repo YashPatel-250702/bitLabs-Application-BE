@@ -23,7 +23,7 @@ import com.talentstream.repository.ApplicantRepository;
 import com.talentstream.repository.JobRepository;
 
 @Service
-public class EventService {
+public class EmailNotificationService {
 
 	@Autowired
 	private JavaMailSender mailSender;
@@ -40,13 +40,14 @@ public class EventService {
 	@Autowired
 	private ApplicantProfileRepository applicantProfileRepository;
 
-	@Scheduled(cron = "* * 10 * * ?")
+	@Scheduled(cron = "* * 11 ? * SUN")
+//@Scheduled(cron = "0 * * * * ?")
 	@Async
 	@Transactional
 	public void sendDateToQueue() {
 		
 		try {
-			LocalDate yesterday = LocalDate.now().minusDays(1);
+			LocalDate yesterday = LocalDate.now();
 			List<Job> jobsByDate = jobRepository.findByCreationDate(yesterday);
 			
 			if (jobsByDate.isEmpty()) {
@@ -88,7 +89,7 @@ public class EventService {
 
 				int jobNo = 1;
 				for (Job job : matchingJobs) {
-					content.append(jobNo++).append(". ").append(job.getJobTitle())
+					content.append(jobNo++).append(". ").append(job.getJobTitle()).append("at bitLabs")
 						.append(" - ").append(job.getJobURL()).append("\n");
 				}
 
