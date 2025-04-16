@@ -47,8 +47,9 @@ public class EmailNotificationService {
 	public void sendDateToQueue() {
 		
 		try {
-			LocalDate yesterday = LocalDate.now();
-			List<Job> jobsByDate = jobRepository.findByCreationDate(yesterday);
+			LocalDate today = LocalDate.now();
+			LocalDate weekStart = today.minusDays(6); 
+			List<Job> jobsByDate = jobRepository.findByCreationDateBetween(weekStart,today);
 			
 			if (jobsByDate.isEmpty()) {
 				System.out.println("No Job Posted Yesterday");
@@ -84,8 +85,8 @@ public class EmailNotificationService {
 				if (matchingJobs.isEmpty()) continue;
 
 				StringBuilder content = new StringBuilder("Hey there!\n\n")
-					.append("Exciting job opportunities matching your skills posted on ")
-					.append(yesterday).append(":\n\n");
+					.append("Exciting job opportunities matching your skills posted in this week ")
+					.append(":\n\n");
 
 				int jobNo = 1;
 				for (Job job : matchingJobs) {
