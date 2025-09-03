@@ -39,7 +39,7 @@ public class FireBaseController {
 		}
 		try {
 			
-			firebaseMessagingService.saveFcmTOken(fcmTokens,id);
+			firebaseMessagingService.saveFcmToken(fcmTokens,id);
 			return ResponseEntity.status(HttpStatus.OK).body("Fcm Token Saved Successfully");
 		}
 		catch (CustomException e) {
@@ -64,6 +64,35 @@ public class FireBaseController {
 		
 		try {
 			String sendNotification = firebaseMessagingService.sendNotification(id,dto.getTitle(),dto.getBody());
+			System.out.println(sendNotification);                   
+			if(sendNotification.isBlank()) {
+				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Token is not valid or expired Please try again with correct FCM Token");
+			}
+			return ResponseEntity.status(HttpStatus.OK).body("Notification sent succefully");
+		} 
+		catch (CustomException e) {
+			System.err.println(e.getMessage());
+			return ResponseEntity.status(e.getStatus()).body(e.getMessage());
+		}
+		catch (Exception e) {
+			System.err.println(e.getMessage());
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Internal Server Error");
+		}
+	}
+
+
+	@PostMapping("/sendToAll")
+	public ResponseEntity<?> sendNotificationToAll(@Valid @RequestBody NotificationDto dto ,BindingResult bindingResult){
+		if(bindingResult.hasErrors()) {
+			Map<String, String> errors=new HashMap<>();
+			bindingResult.getFieldErrors().forEach(err->{
+				errors.put(err.getField(), err.getDefaultMessage());
+			});
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errors);
+		}
+		
+		try {
+			String sendNotification = firebaseMessagingService.sendNotificationToAll(dto.getTitle(),dto.getBody());
 			System.out.println(sendNotification);                   
 			if(sendNotification.isBlank()) {
 				return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Token is not valid or expired Please try again with correct FCM Token");
